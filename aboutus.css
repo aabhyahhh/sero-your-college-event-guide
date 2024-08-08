@@ -555,7 +555,7 @@ global.css
 .content11 {
   flex: 1;
   flex-direction: column;
-  gap: var(--gap-21xl);
+  gap: 5px;
   z-index: 3;
 }
 .content-wrapper1,
@@ -738,11 +738,11 @@ global.css
   width: 417.9px;
 }
 .frame-child10 {
-  top: 184px;
-  left: 331.3px;
+  top: 160px;
+  left: 320.3px;
   width: 244.7px;
   height: 299.6px;
-  z-index: 1;
+  z-index: -1;
 }
 .frame-parent4 {
   position: absolute;
@@ -752,12 +752,16 @@ global.css
   height: 483.6px;
   z-index: 3;
 }
+
+h2{
+  color: white;
+}
 .pattern-container {
   width: 100%;
   height: 1210px;
   position: absolute;
   margin: 0 !important;
-  top: 0;
+  margin-bottom:5px;
   right: 0;
   left: 0;
 }
