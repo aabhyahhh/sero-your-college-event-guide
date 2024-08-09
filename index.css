@@ -363,7 +363,7 @@ body{
 }
 
 .clubs-content-container{
-  top:30%;
+  top:10%;
   left:50%;
   position:absolute;
   float:right;
@@ -473,7 +473,7 @@ body{
 }
 
 .fyndit-content-container{
-top:30%;
+top:10%;
 left:10%;
 position:absolute;
 }
@@ -486,7 +486,7 @@ font-size: 3rem;
 }
 
 .fyndit-container-text{
-width:100%;
+width:80%;
 font-size:1.5rem;
 color:#bcbcbc;
 font-family:var(--font-helvetica);
@@ -501,6 +501,7 @@ width:11.5rem;
 height:3.5rem;
 border:1px solid white;
 border-radius:40px;
+z-index: 100;
 }
 
 .pattern-container{
