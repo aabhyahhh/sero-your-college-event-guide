@@ -202,6 +202,7 @@ body{
   background-color: #1c1c1c;
   border-top: none;
   margin: 20px;
+  position:relative;
   border-radius: 8px;
 }
 
@@ -212,19 +213,22 @@ body{
 /*overview*/
 .overview{
   margin: 5% 10%;
+  background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(76, 0, 130, 0.068) 60%, rgba(75,0,130,0.2) 80%, rgba(107, 98, 191, 0.375) 100%);
 }
 .overview-content{
   color:white;
   font-family:'EB Garamond';
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 1.4rem;
+  text-align: left;
   margin:0 30%;
+
 }
 
 
 /*gallery*/
 .gallery{
   margin: 5% 10%;
+  background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(76, 0, 130, 0.068) 60%, rgba(75,0,130,0.2) 80%, rgba(107, 98, 191, 0.375) 100%);
 }
 
 .gallery-container{
@@ -236,19 +240,58 @@ body{
   align-items:center;
 }
 
+.gallery-img:hover{
+  transform: scale(1.1);
+}
+
+/*team*/
+.team{
+  margin: 5% 10%;
+  background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(76, 0, 130, 0.068) 60%, rgba(75,0,130,0.2) 80%, rgba(107, 98, 191, 0.375) 100%);
+}
+
+.team-container{
+  margin: 2% 1%;
+  display:grid;
+  gap:10px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items:center;
+}
+
+.team-member{
+  display:block;
+}
+
+.team-member-name{
+  font-family:'EB Garamond';
+  color:white;
+  font-size:1.3rem;
+}
+
 /*contact*/
+.contact{
+  display:flex;
+  flex-direction: column;
+  justify-content:space-between;
+  background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(76, 0, 130, 0.068) 60%, rgba(75,0,130,0.2) 80%, rgba(107, 98, 191, 0.375) 100%);
+  width:100%;
+}
 .contact-form, .contact-info {
     display: flex;
     flex-direction: column;
 }
 
 .contact-form {
-    flex: 2;
     margin-right: 20px;
+    width:70%;
 }
 
 .contact-info {
-    flex: 1;
+  position:absolute;
+  width:20%;
+  right:5%;
+  top:3%;
 }
 
 .form-group {
@@ -258,6 +301,9 @@ body{
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color:white;
+    font-family:'EB Garamond';
+    font-size:1.4em;
 }
 
 .form-group input, .form-group textarea {
@@ -265,7 +311,7 @@ body{
     padding: 10px;
     border: 1px solid #333;
     border-radius: 4px;
-    background-color: #2b2b2b;
+    background-color: hsl(0, 0%, 17%);
     color: #fff;
 }
 
@@ -275,11 +321,12 @@ body{
 
 .form-group.checkbox {
     display: flex;
+    left:0;
     align-items: center;
 }
 
 .form-group.checkbox input {
-    margin-right: 10px;
+    left:0;
 }
 
 button[type="submit"] {
@@ -298,11 +345,17 @@ button[type="submit"]:hover {
 
 .contact-info h2 {
     margin: 10px 0;
+    color:white;
+    font-family: 'EB Garamond';
+    font-size: 1.4em;
 }
 
 .contact-info p, .contact-info a {
     margin: 5px 0;
-    color: #b3b3b3;
+    color: #a2a2a2;
+    font-size: 1em;
+    font-family:'Helvetica'
+
 }
 
 @media screen and (max-width: 768px) {
@@ -517,9 +570,9 @@ footer{
     width:100%;
   }
   .event-img{
-    scale:0.8;
+    scale:0.7;
     float:left;
-    left:3%;
+    left:0%;
   }
 
   .tabs{

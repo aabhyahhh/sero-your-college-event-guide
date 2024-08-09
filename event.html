@@ -42,7 +42,7 @@
       </div>
       <ul class="nav-list sidebar">
         <li class="close-button" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-        <li class="nav-item"><a href="clubs-main.html" class="nav-link">Clubs</a></li>
+        <li class="nav-item"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
         <li class="nav-item"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
         <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
         <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
@@ -50,7 +50,7 @@
         <li class="nav-item"><a href="" class="nav-link">Sign Up</a></li>
    </ul>
       <ul class="nav-list">
-             <li class="nav-item hideOnMobile"><a href="clubs-main.html" class="nav-link">Clubs</a></li>
+             <li class="nav-item hideOnMobile"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
              <li class="nav-item hideOnMobile"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
              <li class="nav-item hideOnMobile"><a href="aboutus.html" class="nav-link">AboutUs</a></li>
              <li class="nav-item hideOnMobile"><a href="contactus.html" class="nav-link">ContactUs</a></li>
@@ -80,9 +80,9 @@
 
     <!-- tab switching -->
      <div class="tabs">
-        <button class="tablink" onclick="openTab(event, 'Overview')">Overview</button>
+        <button class="tablink active" onclick="openTab(event, 'Overview')">Overview</button>
         <button class="tablink" onclick="openTab(event, 'Gallery')">Gallery</button>
-        <button class="tablink" onclick="openTab(event, 'Comments')">Comments</button>
+        <button class="tablink" onclick="openTab(event, 'Team')">Team</button>
         <button class="tablink" onclick="openTab(event, 'Contact')">Contact</button>
     </div>
 
@@ -104,11 +104,36 @@
        </div>
     </div>
 
-    <div id="Comments" class="tabcontent" style="display:none">
-        <p>These are comments.</p>
+    <div id="Team" class="tabcontent team" style="display:none">
+        <div class="team-container">
+          <div class="team-member">
+            <img src="gallery-img.png" class="team-member-img">
+            <p class="team-member-name">Member name</p>
+          </div>
+          <div class="team-member">
+            <img src="gallery-img.png" class="team-member-img">
+            <p class="team-member-name">Member name</p>
+          </div>
+          <div class="team-member">
+            <img src="gallery-img.png" class="team-member-img">
+            <p class="team-member-name">Member name</p>
+          </div>
+          <div class="team-member">
+            <img src="gallery-img.png" class="team-member-img">
+            <p class="team-member-name">Member name</p>
+          </div>
+          <div class="team-member">
+            <img src="gallery-img.png" class="team-member-img">
+            <p class="team-member-name">Member name</p>
+          </div>
+          <div class="team-member">
+            <img src="gallery-img.png" class="team-member-img">
+            <p class="team-member-name">Member name</p>
+          </div>
+        </div>
     </div>
 
-    <div id="Contact" class="tabcontent" style="display:none">
+    <div id="Contact" class="tabcontent contact" style="display:none">
       <form class="contact-form">
         <div class="form-group">
             <label for="first-name">First name</label>
@@ -126,27 +151,20 @@
             <label for="message">Message</label>
             <textarea id="message" name="message" placeholder="Leave us a message..."></textarea>
         </div>
-        <div class="form-group checkbox">
-            <input type="checkbox" id="privacy-policy" name="privacy-policy">
-            <label for="privacy-policy">You agree to our friendly privacy policy.</label>
-        </div>
         <button type="submit">Send message</button>
     </form>
     <div class="contact-info">
-        <h2>Chat to us</h2>
+        <h2>Chat with us</h2>
         <p>Our friendly team is here to help.</p>
         <p><a href="mailto:hi@untitledui.com">hi@untitledui.com</a></p>
         <h2>Phone</h2>
         <p>Mon-Fri from 8am to 5pm.</p>
         <p>+1 (555) 000-0000</p>
     </div>
-</div>
-
-    </div>
-
+  </div>
 
     
-      <!--footer-->
+<!--footer-->
  
   <div class="footer-content">
     <p>We're social, so if you'd like to talk about your event, get in touch!</p>
@@ -166,11 +184,11 @@
 
     <table class="footer-links-table">
       <tr>
-        <td><a href="#" class="footer-link">Home</a></td>
-        <td><a href="#" class="footer-link">Clubs</a></td>
-        <td><a href="#" class="footer-link">FYNDit</a></td>
-        <td><a href="#" class="footer-link">About Us</a></td>
-        <td><a href="#" class="footer-link">Contact Us</a></td>
+        <td><a href="index.html" class="footer-link">Home</a></td>
+        <td><a href="clubs-overview.html" class="footer-link">Clubs</a></td>
+        <td><a href="fyndit.html" class="footer-link">FYNDit</a></td>
+        <td><a href="aboutus.html" class="footer-link">About Us</a></td>
+        <td><a href="contactus.html" class="footer-link">Contact Us</a></td>
       </tr>
     </table>
 

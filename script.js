@@ -49,9 +49,14 @@ function openTab(evt, tabName) {
 
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.style.backgroundColor = "rgba(107, 62, 162, 0.9)";
+  evt.currentTarget.className += " active";
 }
+
+// Trigger click event on the "Overview" tab to display it by default
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.tablink.active').click();
+});
