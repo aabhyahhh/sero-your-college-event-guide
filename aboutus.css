@@ -532,6 +532,7 @@ global.css
 .button32 {
   display: flex;
   flex-direction: row;
+  z-index: 2;
 }
 .button32 {
   box-shadow: var(--shadow-xs);
@@ -697,6 +698,7 @@ global.css
   left: -157px;
   width: 1755px;
   height: 625px;
+  z-index: 0;
 }
 .frame-child7,
 .frame-child8 {
