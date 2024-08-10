@@ -28,102 +28,32 @@
     />
   </head>
   <body>
-    <div class="fyndit4">
-      <header class="main1">
-        <!--fixed logo-->
-        <div class="content7">
-          <img
-            class="subtract-icon6"
-            loading="lazy"
-            alt=""
-            src= "logo.png" 
-          />
-
-          <a class="sero7">sero</a>
-          <nav class="navigation3"> <!-- Nav buttons-->
-            <div class="button28"> <!--Nav Clubs-->
-              <a href= "clubs-main.html">Clubs</a> 
-            </div>
-
-            <div class="dropdown-header-navigation-tri6">
-              <div class="button29">
-                <img
-                  class="placeholder-icon42"
-                  alt=""
-                  src="./public/placeholder1.svg"
-                />
-
-                <a class="text37">FYNDit</a>
-                <img
-                  class="chevron-down-icon6"
-                  alt=""
-                  src="./public/chevrondown.svg"
-                />
-              </div>
-            </div>
-            <div class="dropdown-header-navigation-tri7">
-              <div class="button30">
-                <img
-                  class="placeholder-icon43"
-                  alt=""
-                  src="./public/placeholder1.svg"
-                />
-
-                <a class="text38">About us</a>
-                <img
-                  class="chevron-down-icon7"
-                  alt=""
-                  src="./public/chevrondown.svg"
-                />
-              </div>
-            </div>
-            <div class="button31">
-              <img
-                class="placeholder-icon44"
-                alt=""
-                src="./public/placeholder1.svg"
-              />
-
-              <a class="text39">Contact us</a>
-              <img
-                class="placeholder-icon45"
-                alt=""
-                src="./public/placeholder1.svg"
-              />
-            </div>
-          </nav>
-        </div>
-      </header>
-      <div class="navigation-actions3">
-        <div class="button32">
-          <img
-            class="placeholder-icon46"
-            alt=""
-            src="./public/placeholder1.svg"
-          />
-
-          <div class="text40">Log in</div>
-          <img
-            class="placeholder-icon47"
-            alt=""
-            src="./public/placeholder1.svg"
-          />
-        </div>
-        <div class="button33">
-          <img
-            class="placeholder-icon48"
-            alt=""
-            src="./public/placeholder2.svg"
-          />
-
-          <div class="text41">Sign up</div>
-          <img
-            class="placeholder-icon49"
-            alt=""
-            src="./public/placeholder2.svg"
-          />
-        </div>
-      </div>
+        <!-- navigation bar -->
+        <nav class="navigation">
+          <div class="left-container">
+          <!--logo-->
+               <a href="index.html"><img src="logo_1.png" alt="logo" class="logo"></a>
+          </div>
+          <ul class="nav-list sidebar">
+            <li class="close-button" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li class="nav-item"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
+            <li class="nav-item"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
+            <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Log in</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Sign Up</a></li>
+       </ul>
+          <ul class="nav-list">
+                 <li class="nav-item hideOnMobile"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
+                 <li class="nav-item hideOnMobile"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
+                 <li class="nav-item hideOnMobile"><a href="aboutus.html" class="nav-link">AboutUs</a></li>
+                 <li class="nav-item hideOnMobile"><a href="contactus.html" class="nav-link">ContactUs</a></li>
+                <!-- <li class="nav-item hideOnMobile"><a href="" class="nav-link">Log in</a></li>-->
+                 <li class="nav-item hideOnMobile"><a href="login.html"><button class="sign-up">Admin</button></li></a>
+                 <li class="menu-button" onclick="showSidebar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+           
       <!--<div class="rectangle-group">
         <img class="frame-child11" alt="" src="" />
       </div> -->
@@ -541,47 +471,42 @@
       </div>
 
       
-      <!--#####     FOOTER    #####-->
-      <footer class="footer2">
-        <div class="content10">
-          <img class="social-icon18" alt="" src="./public/social-icon.svg" />
+  <!--footer-->
+ 
+  <div class="footer-content">
+    <p>We're social, so if you'd like to talk about your event, get in touch!</p>
 
-          <div class="social-icons3">
-            <img
-              class="social-icon19"
-              loading="lazy"
-              alt=""
-              src="./public/social-icon.svg"
-            />
+    <table class="footer-contact" >
+      <tr>
+        <td>Email</td>
+        <td>seromuj@gmail.com<br>
+        <td>drop us a comment: <input type="text" placeholder="write here." class="input-comment"></td>
+      </tr>
+    </table>
+</div>
 
-            <img
-              class="social-icon20"
-              loading="lazy"
-              alt=""
-              src="./public/social-icon.svg"
-            />
-          </div>
-          <img class="social-icon21" alt="" src="./public/social-icon1.svg" />
+<footer>
+  <div class="footer-links">
+    <img src="logo_1.png" class="footer-logo">
 
-          <img class="social-icon22" alt="" src="./public/social-icon2.svg" />
+    <table class="footer-links-table">
+      <tr>
+        <td><a href="#" class="footer-link">Home</a></td>
+        <td><a href="#" class="footer-link">Clubs</a></td>
+        <td><a href="#" class="footer-link">FYNDit</a></td>
+        <td><a href="#" class="footer-link">AboutUs</a></td>
+        <td><a href="#" class="footer-link">ContactUs</a></td>
+      </tr>
+    </table>
 
-          <img class="social-icon23" alt="" src="./public/social-icon3.svg" />
-
-          <div class="sero-container1">
-            <img
-              class="subtract-icon7"
-              loading="lazy"
-              alt=""
-              src="./public/subtract.svg"
-            />
-
-            <div class="sero-wrapper1">
-              <h1 class="sero8">sero</h1>
-            </div>
-          </div>
-          <div class="footer-text3">© 2077 Sero. All rights reserved.</div>
-        </div>
-      </footer>
+    <table class="social-icons">
+      <tr>
+        <td><a href="https://www.instagram.com/sero.muj/" class="social-icons-link"><i class="fa-brands fa-instagram" style="color: #f5f5f5; scale:1.2"></i></a></td>
+        <td><a href="https://x.com/_seroindia" class="social-icons-link"><i class="fa-brands fa-x-twitter" style="color: #ffffff; scale:1.2"></i></a></td>
+      </tr>      
+    </table>
+</div>
+</footer>
     </div>
   </body>
 </html>
