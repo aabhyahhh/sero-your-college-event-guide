@@ -109,25 +109,29 @@ body{
   display:flex;
   justify-content: center;
   align-items:center;
+  text-align: center;
+  padding: 2em 0;
 }
 
 .clubs-title{
-  font-size:9em;
+  font-size:6em;
   position:absolute;
-  top:0;
+  top:10%;
   color:white;
   font-family:var(--font-unbounded);
+  margin: 0;
 }
 
 .clubs-text{
   position:absolute;
   color:white;
-  top:25%;
-  font-size:3em;
+  top:30%;
+  font-size:1.5em;
   font-family:"EB Garamond";
-  width:75%;
-  line-height:1;
+  width:80%;
+  line-height:1.2;
   text-align: center;
+  padding: 0 1em;
 }
 
 .clubs-text-frame{
@@ -136,8 +140,9 @@ body{
 
 .hero-img-bottom{
   position:absolute;
-  top:55%;
+  top:45%;
   width:100%;
+  min-height: 45%;
   height:auto;
 }
 
@@ -145,6 +150,7 @@ body{
   position:relative;
   background-color: #E1A243;
   height:50px;
+  overflow: hidden;
 }
 
 .marquee-text{
@@ -155,6 +161,7 @@ body{
   position:absolute;
   display:inline-block;
   margin-top:-10px;
+  white-space: nowrap;
 }
 
 .asterisk-icon{
