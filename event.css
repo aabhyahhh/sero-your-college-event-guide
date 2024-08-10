@@ -271,11 +271,13 @@ body{
 
 /*contact*/
 .contact{
+  margin:5% 5%;
   display:flex;
   flex-direction: column;
   justify-content:space-between;
   background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(76, 0, 130, 0.068) 60%, rgba(75,0,130,0.2) 80%, rgba(107, 98, 191, 0.375) 100%);
   width:100%;
+  width:90vw;
 }
 .contact-form, .contact-info {
     display: flex;
@@ -284,13 +286,13 @@ body{
 
 .contact-form {
     margin-right: 20px;
-    width:70%;
+    width:60%;
 }
 
 .contact-info {
   position:absolute;
   width:20%;
-  right:5%;
+  right:10%;
   top:3%;
 }
 
@@ -551,6 +553,7 @@ footer{
   }
   .date-time{
     font-size:0.5em;
+    margin-bottom:-5%;
   }
 
   .event-name{
@@ -570,13 +573,47 @@ footer{
     width:100%;
   }
   .event-img{
-    scale:0.7;
+    scale:0.8;
+    margin-top:-9%;
     float:left;
-    left:0%;
+    margin-left:-9%;
   }
 
   .tabs{
+    left:1%;
+    margin:0 
+  }
+
+  .tablink{
+    font-size: 0.7em;
+  }
+
+  .gallery-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-img{
     margin:0;
+  }
+
+  .team-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .form-group label, .contact-info h2{
+    font-size: 1.2em;
+  }
+
+  .contact{
+    width: 87vw;
+    margin:2% 3%;
+  }
+
+   .contact-info{
+    position:relative;
+    left:2%;
+    width:100%;
+    line-height:1em;
   }
 
   /*mobile-footer*/
@@ -640,10 +677,6 @@ footer{
 
 /*tablet version*/
 @media (min-width: 768px) and (max-width:1024px){
-  body{
-    margin:0 auto;
-    width:100%;
-    }
   
     /*nav*/
     .nav-item,.nav-link{
@@ -656,8 +689,80 @@ footer{
       text-align: center;
     }
 
+    body{
+      width:100vw;
+      overflow-x:hidden;
+      margin:0 auto;
+      box-sizing:border-box;
+    }
+  
+    .hero-section{
+      height:40vh;
+    }
+  
+    .pattern-1{
+      position: absolute;
+      height:inherit
+    }
+  
+    .event-container{
+      top:0;
+      margin:0 2%;
+      width: 100%;
+      display:flex;
+      position:relative;
+    }
+  
+    .hero-section.left-container{
+      width: 50%;
+      margin-top:3%;
+    }
+    .date-time{
+      font-size:0.5em;
+      margin-bottom:-5%;
+    }
+  
+    .event-name{
+      font-size:2.3em;
+    }
+  
+    .venue,.organiser{
+      font-size:1em;
+    }
+    
+    .register-btn{
+      scale:1 ;
+    }
+  
+    .right-container{
+      top:0;
+      float:right;
+    }
+    .event-img{
+      top:0;
+      scale:0.8;
+    }
+
+    .tabs{
+      position:relative;
+      top:0;
+    }
+  
+    .team-container,.gallery-container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact{
+      left:0;
+      width:85vw;
+    }
+    
+    .gallery-img, .team-member-img{
+      width:95%;
+    }
 
     /*tablet-footer*/
+
     .footer-section{
       position:relative;
       margin-top:30%;
