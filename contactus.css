@@ -110,7 +110,7 @@ body{
   position: relative;
   color:var(--color-gray-100);
   filter: blur(1.5px);
-  margin-top: 0%;
+  margin-top: 18%;
 }
 
 
@@ -404,6 +404,7 @@ footer{
   position: absolute;
   top: 585px;
   left: -157px;
+  right: -157px;
   width: 1755px;
   height: 625px;
 }
@@ -428,6 +429,7 @@ footer{
   position: absolute;
   top: 0;
   left: -8px;
+  right: -8px;
   width: 1458px;
   height: 875px;
   z-index: 2;
@@ -671,7 +673,6 @@ footer{
   margin: 0;
   width: 1008px;
   position: relative;
-  font-size: var(--font-size-13xl);
   font-weight: 400;
   font-family: var(--font-apple-garamond);
   color: var(--gray-300);
@@ -679,6 +680,29 @@ footer{
   max-width: 105%;
   flex-shrink: 0;
 }
+h2{
+  font-size: 2rem; 
+}
+
+p{
+  font-size: 20px;
+}
+
+.emoji{
+  width: 5%;
+}
+
+@media(min-width:320px) and (max-width:480px){
+  .emoji{
+    width: 20%;
+    flex-direction: row;
+  }
+}
+
+.cage{
+  
+}
+
 .container4,
 .content20,
 .header-section2,
@@ -733,7 +757,7 @@ footer{
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  color: var(--color-gray-700);
+  color: ;
   min-width: 214px;
   max-width: 100%;
 }
@@ -753,7 +777,7 @@ footer{
 .input7 {
   box-shadow: var(--shadow-xs);
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-800);
+  background-color: #ddd;
   border: 1px solid var(--gray-300);
   box-sizing: border-box;
   overflow: hidden;
@@ -811,7 +835,7 @@ footer{
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  color: var(--color-gray-700);
+  color: #000;
   min-width: 214px;
   max-width: 100%;
 }
@@ -831,7 +855,7 @@ footer{
 .input8 {
   box-shadow: var(--shadow-xs);
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-800);
+  background-color: #ddd;
   border: 1px solid var(--gray-300);
   box-sizing: border-box;
   overflow: hidden;
@@ -900,7 +924,7 @@ footer{
   align-items: center;
   justify-content: flex-start;
   font-size: var(--text-md-regular-size);
-  color: var(--color-gray-700);
+  color: #000;
   min-width: 250px;
   max-width: 100%;
 }
@@ -920,7 +944,7 @@ footer{
 .input9 {
   box-shadow: var(--shadow-xs);
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-800);
+  background-color: #ddd;
   border: 1px solid var(--gray-300);
   box-sizing: border-box;
   overflow: hidden;
@@ -972,7 +996,7 @@ footer{
   background-color: transparent;
   height: 110px;
   flex: 1;
-  color: var(--color-gray-700);
+  color: #000;
   min-width: 250px;
   max-width: 100%;
   padding: 0;
@@ -988,7 +1012,7 @@ footer{
 .input10 {
   box-shadow: var(--shadow-xs);
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-800);
+  background-color: #ddd;
   border: 1px solid var(--gray-300);
   box-sizing: border-box;
   overflow: hidden;

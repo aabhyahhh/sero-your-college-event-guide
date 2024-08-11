@@ -55,122 +55,15 @@
         </ul>
     </nav>
     <!--end of navigation bar-->
-
-
-
-    <div class="contactus1">
-      <div class="navigation-actions5">
-        <div class="button42">
-          <img
-            class="placeholder-icon64"
-            alt=""
-            src="./public/placeholder1.svg"
-          />
-
-          <div class="text64">Log in</div>
-          <img
-            class="placeholder-icon65"
-            alt=""
-            src="./public/placeholder1.svg"
-          />
-        </div>
-        <div class="button43">
-          <img
-            class="placeholder-icon66"
-            alt=""
-            src="./public/placeholder2.svg"
-          />
-
-          <div class="text65">Sign up</div>
-          <img
-            class="placeholder-icon67"
-            alt=""
-            src="./public/placeholder2.svg"
-          />
-        </div>
-      </div>
       <section class="pattern-parent1">
-        <img class="pattern-icon5" alt="" src="./public/pattern3.svg" />
+        
 
         <div class="frame-child16"></div>
         <div class="frame-child17"></div>
-        <img class="line-icon9" alt="" src="./public/line1.svg" />
+        <img class="line-icon9" alt="" src="background_pattern.svg" /> 
       </section>
+
       <section class="frame-parent7">
-        <header class="frame-header">
-          <div class="content19">
-            <img
-              class="subtract-icon10"
-              loading="lazy"
-              alt=""
-              src="./public/subtract1.svg"
-            />
-
-            <a class="sero11">sero</a>
-            <nav class="navigation5">
-              <div class="button44">
-                <img
-                  class="placeholder-icon68"
-                  alt=""
-                  src="./public/placeholder1.svg"
-                />
-
-                <a class="text66">Clubs</a>
-                <img
-                  class="placeholder-icon69"
-                  alt=""
-                  src="./public/placeholder1.svg"
-                />
-              </div>
-              <div class="dropdown-header-navigation-tri10">
-                <div class="button45">
-                  <img
-                    class="placeholder-icon70"
-                    alt=""
-                    src="./public/placeholder1.svg"
-                  />
-
-                  <a class="text67">FYNDit</a>
-                  <img
-                    class="chevron-down-icon10"
-                    alt=""
-                    src="./public/chevrondown1.svg"
-                  />
-                </div>
-              </div>
-              <div class="dropdown-header-navigation-tri11">
-                <div class="button46">
-                  <img
-                    class="placeholder-icon71"
-                    alt=""
-                    src="./public/placeholder1.svg"
-                  />
-
-                  <a class="text68">About us</a>
-                  <img
-                    class="chevron-down-icon11"
-                    alt=""
-                    src="./public/chevrondown1.svg"
-                  />
-                </div>
-              </div>
-              <div class="button47">
-                <img
-                  class="placeholder-icon72"
-                  alt=""
-                  src="./public/placeholder1.svg"
-                />
-
-                <a class="text69">Contact us</a>
-                <img
-                  class="placeholder-icon73"
-                  alt=""
-                  src="./public/placeholder1.svg"
-                />
-              </div>
-            </nav>
-          </div>
-        </header>
         <div class="header-section2">
           <div class="container4">
             <div class="content20">
@@ -178,37 +71,30 @@
                 <div class="heading-and-subheading3">
                   <h1 class="heading16">Contact Us</h1>
                 </div>
-                <h1 class="get-in-touch1">
-                  Get in touch and start exploring your city with a new local
-                  friend!
-                </h1>
+                <h2 class="get-in-touch1">Join our mailing list NOW! <span><img class="emoji" src="emoji1.png" alt=""></span>
+                </h2>
+                <p>also drop your queries so we can keep improving xo</p>
               </div>
             </div>
           </div>
         </div>
         <div class="form-container-wrapper">
-          <form class="form-container">
+          <form action="https://api.web3forms.com/submit" method="POST" class="form-container">
             <div class="form-elements">
               <div class="row1">
                 <div class="input-field6">
                   <div class="input-with-label6">
                     <b class="label6">First name</b>
                     <div class="input7">
+                      <input type="hidden" name="access_key" value="5e991fb5-5eef-4b77-9d55-b24c50696aa1">
                       <input
+                      name="first_name"
                         class="content21"
                         placeholder="First name"
                         type="text"
-                      />
-
-                      <img
-                        class="help-icon5"
-                        alt=""
-                        src="./public/help-icon1.svg"
+                        required
                       />
                     </div>
-                  </div>
-                  <div class="hint-text6">
-                    This is a hint text to help user.
                   </div>
                 </div>
                 <div class="input-field7">
@@ -216,20 +102,13 @@
                     <b class="label7">Last name</b>
                     <div class="input8">
                       <input
+                      name="last_name"
                         class="content22"
                         placeholder="Last name"
                         type="text"
-                      />
-
-                      <img
-                        class="help-icon6"
-                        alt=""
-                        src="./public/help-icon1.svg"
+                        required
                       />
                     </div>
-                  </div>
-                  <div class="hint-text7">
-                    This is a hint text to help user.
                   </div>
                 </div>
               </div>
@@ -238,38 +117,31 @@
                   <b class="label8">Email</b>
                   <div class="input9">
                     <input
+                    name="email"
                       class="content23"
                       placeholder="you@company.com"
-                      type="text"
-                    />
-
-                    <img
-                      class="help-icon7"
-                      alt=""
-                      src="./public/help-icon1.svg"
+                      type="email"
+                      required
                     />
                   </div>
                 </div>
-                <div class="hint-text8">This is a hint text to help user.</div>
               </div>
               <div class="textarea-input-field1">
                 <div class="input-with-label9">
                   <b class="label9">Message</b>
                   <div class="input10">
                     <input
+                    name="comment"
                       class="text70"
                       placeholder="Leave us a message..."
                       type="text"
                     />
                   </div>
-                </div>
-                <div class="hint-text9">This is a hint text to help user.</div>
-              </div>
               <div class="checkbox1">
                 <input class="input11" type="checkbox" />
 
                 <div class="text-and-supporting-text1">
-                  <div class="checkbox-content">
+                  <div class="checkbox-content" required>
                     You agree to our friendly privacy policy.
                   </div>
                   <div class="supporting-text7">
@@ -286,61 +158,20 @@
               />
 
               <div class="text71">Send message</div>
-              <img
-                class="placeholder-icon75"
-                alt=""
-                src="./public/placeholder5.svg"
-              />
             </button>
           </form>
+          
+        </div>
+        <div class="cage">
+          <img class="pattern-icon5" alt="" src="cage-fyndit-bottom.png" />
         </div>
       </section>
-      <footer class="footer3">
-        <div class="content24">
-          <img class="social-icon30" alt="" src="./public/social-icon1.svg" />
-
-          <div class="social-icons5">
-            <img
-              class="social-icon31"
-              loading="lazy"
-              alt=""
-              src="./public/social-icon1.svg"
-            />
-
-            <img
-              class="social-icon32"
-              loading="lazy"
-              alt=""
-              src="./public/social-icon1.svg"
-            />
-          </div>
-          <img class="social-icon33" alt="" src="./public/social-icon2.svg" />
-
-          <img class="social-icon34" alt="" src="./public/social-icon3.svg" />
-
-          <img class="social-icon35" alt="" src="./public/social-icon4.svg" />
-
-          <div class="footer-subtract">
-            <img
-              class="subtract-icon11"
-              loading="lazy"
-              alt=""
-              src="./public/subtract1.svg"
-            />
-
-            <div class="sero-wrapper2">
-              <h1 class="sero12">sero</h1>
-            </div>
-          </div>
-          <div class="footer-text5">© 2077 Sero. All rights reserved.</div>
-        </div>
-      </footer>
     </div>
 
 
     <!--footer-->
     <!--footer-->
- 
+  <hr class="horizontal-rule">
   <div class="footer-content">
     <p>We're social, so if you'd like to talk about your event, get in touch!</p>
 
