@@ -277,7 +277,7 @@ body{
   justify-content:space-between;
   background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(76, 0, 130, 0.068) 60%, rgba(75,0,130,0.2) 80%, rgba(107, 98, 191, 0.375) 100%);
   width:100%;
-  width:90vw;
+  width:91vw;
 }
 .contact-form, .contact-info {
     display: flex;
