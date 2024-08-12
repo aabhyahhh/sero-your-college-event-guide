@@ -13,160 +13,120 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Apple Garamond:ital,wght@0,400;1,700&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;700&display=swap" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&family=Archivo+Black&family=Bebas+Neue&family=Black+Ops+One&family=Chakra+Petch:wght@500&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Josefin+Sans:wght@100&family=Madimi+One&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Poiret+One&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100&family=Rock+3D&family=Space+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   
-  <div class="aboutus1">
-    <div class="navigation-actions3">
-      <div class="button26">
-        <img class="placeholder-icon39" alt="" src="./public/placeholder1.svg" />
-
-        <div class="text34">Log in</div>
-        <img class="placeholder-icon40" alt="" src="./public/placeholder1.svg" />
-      </div>
-      <div class="button27">
-        <img class="placeholder-icon41" alt="" src="./public/placeholder2.svg" />
-
-        <div class="text35">Sign up</div>
-        <img class="placeholder-icon42" alt="" src="./public/placeholder2.svg" />
-      </div>
+  <!-- navigation bar -->
+  <nav class="navigation">
+    <div class="left-container">
+    <!--logo-->
+         <a href="index.html"><img src="logo_1.png" alt="logo" class="logo"></a>
     </div>
-    <section class="frame-parent2">
-      <div class="frame-parent3">
-        <header class="content-frame">
-          <div class="content9">
-            <img class="subtract-icon6" loading="lazy" alt="" src="./public/subtract1.svg" />
+    <ul class="nav-list sidebar">
+      <li class="close-button" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+      <li class="nav-item"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
+      <li class="nav-item"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
+      <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+      <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Log in</a></li>
+      <li class="nav-item"><a href="" class="nav-link">Sign Up</a></li>
+ </ul>
+    <ul class="nav-list">
+           <li class="nav-item hideOnMobile"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
+           <li class="nav-item hideOnMobile"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
+           <li class="nav-item hideOnMobile"><a href="aboutus.html" class="nav-link">AboutUs</a></li>
+           <li class="nav-item hideOnMobile"><a href="contactus.html" class="nav-link">ContactUs</a></li>
+          <!-- <li class="nav-item hideOnMobile"><a href="" class="nav-link">Log in</a></li>-->
+           <li class="nav-item hideOnMobile"><a href="login.html"><button class="sign-up">Admin</button></li></a>
+           <li class="menu-button" onclick="showSidebar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+  </nav>
 
-            <a class="sero7">sero</a>
-            <nav class="navigation3">
-              <div class="button28">
-                <img class="placeholder-icon43" alt="" src="./public/placeholder1.svg" />
+  <!--intro-section-->
+        <div class="intro-section">
+          <img src="background-glow.svg" class="intro-section-pattern" width="100%">
 
-                <a class="text36">Clubs</a>
-                <img class="placeholder-icon44" alt="" src="./public/placeholder1.svg" />
-              </div>
-              <div class="dropdown-header-navigation-tri6">
-                <div class="button29">
-                  <img class="placeholder-icon45" alt="" src="./public/placeholder1.svg" />
-
-                  <a class="text37">FYNDit</a>
-                  <img class="chevron-down-icon6" alt="" src="./public/chevrondown1.svg" />
-                </div>
-              </div>
-              <div class="dropdown-header-navigation-tri7">
-                <div class="button30">
-                  <img class="placeholder-icon46" alt="" src="./public/placeholder1.svg" />
-
-                  <a class="text38">About us</a>
-                  <img class="chevron-down-icon7" alt="" src="./public/chevrondown1.svg" />
-                </div>
-              </div>
-              <div class="button31">
-                <img class="placeholder-icon47" alt="" src="./public/placeholder1.svg" />
-
-                <a class="text39">Contact us</a>
-                <img class="placeholder-icon48" alt="" src="./public/placeholder1.svg" />
-              </div>
-            </nav>
+          <div class="intro-content">
+            <h1>About Us</h1>
+            <div class="join-wrapper">
+            <p>for students, by students :)</p>
           </div>
-        </header>
-        <div class="header-section1">
-          <div class="container3">
-            <div class="content10">
-              <div class="heading-and-supporting-text1">
-                <div class="heading-and-subheading2">
-                  <h1 class="heading6">About Us</h1>
-                </div>
-                <h1 class="were-a-small1">
-                  For the students, by the students!
-                </h1>
+         </div>
+
+         <div class="about-container">
+          <div class="left">
+            <h3>Welcome to your college concierge!</h3>
+            <p>At Sero, we believe college life should be vibrant and full of opportunities. That's why we're dedicated to helping students stay connected with the dynamic world of campus events, clubs, and activities. Whether you're looking to join a club, attend a workshop, or simply explore social events happening around campus, Sero is here to make sure you never miss a beat.
+            </p>
+
+            <h3>Our Story</h3>
+            <p>At Sero, we believe college life should be vibrant and full of opportunities. That's why we're dedicated to helping students stay connected with the dynamic world of campus events, clubs, and activities. Whether you're looking to join a club, attend a workshop, or simply explore social events happening around campus, Sero is here to make sure you never miss a beat.
+            </p>
+            
+            <h3>Join Us</h3>
+            <p>Join us as we transform the way students engage with their college community. Follow us on our social media channels for the latest updates and features. When you join our mailing list, you’ll receive personalized notifications via email, keeping you informed about events tailored to your interests. We can’t wait to see how Sero will enhance your college journey.
+            </p>
+            <a href="contactus.html"><button class="get-in-touch">Get in touch</button></a>
+            </div>
+
+
+          <div class="right">
+            <div class="polaroid-container">
+              <div class="polaroid">
+                  <img src="abhaya-shagun.png" alt="Image 1">
+              </div>
+              <div class="polaroid">
+                  <img src="aditya.png" alt="Image 2">
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="content-wrapper1">
-        <div class="content11">
-          <div class="heading-and-subheading3">
-            <h1 class="heading7">Welcome to your college concierge!</h1>
-          </div>
-          <div class="rich-text1">
-            <div class="content-item1">
-              <div class="paragraph1">
-                <p class="mi-tincidunt-elit1">
-                  At Sero, we believe college life should be vibrant and full of opportunities. That's why we're
-                  dedicated to helping students stay connected with the dynamic world of campus events, clubs, and
-                  activities. Whether you're looking to join a club, attend a workshop, or simply explore social events
-                  happening around campus, Sero is here to make sure you never miss a beat.
-                </p>
-                <h2>Our Story</h2>
-                <p class="dolor-enim-eu1">
-                  At Sero, we believe college life should be vibrant and full of opportunities. That's why we're
-                  dedicated to helping students stay connected with the dynamic world of campus events, clubs, and
-                  activities. Whether you're looking to join a club, attend a workshop, or simply explore social events
-                  happening around campus, Sero is here to make sure you never miss a beat.
-                </p>
-                <h2>Join Us</h2>
-                <p class="elit-nisi-in1">
-                  Join us as we transform the way students engage with their college community. Follow us on our social
-                  media channels for the latest updates and features. When you join our mailing list, you’ll receive
-                  personalized notifications via email, keeping you informed about events tailored to your interests. We
-                  can’t wait to see how Sero will enhance your college journey.
-                </p>
-                <img class="pattern-icon3" alt="" src="background-pattern3.svg" />
-              </div>
               
-            </div>
           </div>
-          <a href="contactus.html"></a><button class="actions1">
-            <div class="button32">
-              <b class="text40">Get in touch</b>
-              
-            </div>
-          </button></a>
-        </div>
-        
-      </div>
-    </section>
-    <section class="pattern-container">
-     
+         </div>
+         <!--pattern-->
+         <img src="background-pattern3.svg" class="pattern-2">
+</div>
+         
+         <!--footer-->
+ 
+  <div class="footer-content">
+    <p>We're social, so if you'd like to talk about your event, get in touch!</p>
 
-      <img class="line-icon9" alt="" src="background_pattern.svg" />
+    <table class="footer-contact" >
+      <tr>
+        <td>Email</td>
+        <td>+91 9326359081  <br><hr style="margin-top: 14px; margin-bottom:0px"><br> +91 8130026321</td>
+        <td>drop us a comment: <input type="text" placeholder="write here." class="input-comment"></td>
+      </tr>
+    </table>
+</div>
 
-      <div class="frame-parent4">
-        <img class="frame-child9" alt="" src="abhaya-shagun.png" />
+<footer>
+  <div class="footer-links">
+    <img src="logo_1.png" class="footer-logo">
 
-        <img class="frame-child10" alt="" src="aditya.png" />
-      </div>
-    </section>
-    <footer class="footer2">
-      <div class="content12">
-        <img class="social-icon18" alt="" src="./public/social-icon1.svg" />
+    <table class="footer-links-table">
+      <tr>
+        <td><a href="index.html" class="footer-link">Home</a></td>
+        <td><a href="clubs-overview.html" class="footer-link">Clubs</a></td>
+        <td><a href="fyndit.html" class="footer-link">FYNDit</a></td>
+        <td><a href="aboutus.html" class="footer-link">About Us</a></td>
+        <td><a href="contactus.html" class="footer-link">Contact Us</a></td>
+      </tr>
+    </table>
 
-        <div class="social-icons3">
-          <img class="social-icon19" loading="lazy" alt="" src="./public/social-icon1.svg" />
+    <table class="social-icons">
+      <tr>
+        <td><a href="#" class="social-icons-link"><i class="fa-brands fa-instagram" style="color: #f5f5f5; scale:1.2"></i></a></td>
+        <td><a href="#" class="social-icons-link"><i class="fa-brands fa-x-twitter" style="color: #ffffff; scale:1.2"></i></a></td>
+      </tr>      
+    </table>
+</div>
+</footer>
 
-          <img class="social-icon20" loading="lazy" alt="" src="./public/social-icon1.svg" />
-        </div>
-        <img class="social-icon21" alt="" src="./public/social-icon2.svg" />
-
-        <img class="social-icon22" alt="" src="./public/social-icon3.svg" />
-
-        <img class="social-icon23" alt="" src="./public/social-icon4.svg" />
-
-        <div class="footer-spacing">
-          <img class="subtract-icon7" loading="lazy" alt="" src="./public/subtract1.svg" />
-
-          <div class="sero-container1">
-            <h1 class="sero8">sero</h1>
-          </div>
-        </div>
-        <div class="footer-text3">© 2077 Sero. All rights reserved.</div>
-      </div>
-    </footer>
-    
-  </div>
 </body>
-
 </html>
