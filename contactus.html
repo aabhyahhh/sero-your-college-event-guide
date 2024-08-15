@@ -26,6 +26,8 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;700&display=swap"
     />
+
+    <script src="https://kit.fontawesome.com/0d02b672df.js" crossorigin="anonymous"></script>
   </head>
   <body>
    <!--navigation bar -->
@@ -42,10 +44,10 @@
         <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
         <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
         <li class="nav-item"><a href="" class="nav-link">Log in</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Sign Up</a></li>
+        <li class="nav-item"><a href="" class="nav-link">Admin</a></li>
    </ul>
       <ul class="nav-list">
-             <li class="nav-item hideOnMobile"><a href="clubs-main.html" class="nav-link">Clubs</a></li>
+             <li class="nav-item hideOnMobile"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
              <li class="nav-item hideOnMobile"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
              <li class="nav-item hideOnMobile"><a href="aboutus.html" class="nav-link">AboutUs</a></li>
              <li class="nav-item hideOnMobile"><a href="contactus.html" class="nav-link">ContactUs</a></li>
@@ -55,123 +57,51 @@
         </ul>
     </nav>
     <!--end of navigation bar-->
-      <section class="pattern-parent1">
-        
+    
+    
+    <!--hero section-->
+    <div class="hero-section">
+      <img class="pattern1" src="background-glow_purple.svg" width="100%">
+      <h1 class="contact-us-title">Contact Us</h1>
+      <div class="hero-content">
+        <p class="caption-1">Join our mailing list NOW ! <span class="emoji-frame"><img src="emoji1.png" class="emoji"></span></p>
+        <p class="caption-2"> also drop your queries so we can keep improving xo :)</p>
+      </div>
 
-        <div class="frame-child16"></div>
-        <div class="frame-child17"></div>
-        <img class="line-icon9" alt="" src="background_pattern.svg" /> 
-      </section>
-
-      <section class="frame-parent7">
-        <div class="header-section2">
-          <div class="container4">
-            <div class="content20">
-              <div class="heading-and-supporting-text2">
-                <div class="heading-and-subheading3">
-                  <h1 class="heading16">Contact Us</h1>
-                </div>
-                <h2 class="get-in-touch1">Join our mailing list NOW! <span><img class="emoji" src="emoji1.png" alt=""></span>
-                </h2>
-                <p>also drop your queries so we can keep improving xo</p>
-              </div>
+       <!--form-->
+       <div class="form-container">
+        <form id="contactForm">
+            <div class="form-group">
+              <label name="first_name" class="form-label">First Name </label>
+                <input type="text" id="firstName" name="firstName" placeholder="First name" required>
+                
+                <label name="last_name" class="form-label">Last Name </label>
+                <input type="text" id="lastName" name="lastName" placeholder="Last name" required>
             </div>
-          </div>
-        </div>
-        <div class="form-container-wrapper">
-          <form action="https://api.web3forms.com/submit" method="POST" class="form-container">
-            <div class="form-elements">
-              <div class="row1">
-                <div class="input-field6">
-                  <div class="input-with-label6">
-                    <b class="label6">First name</b>
-                    <div class="input7">
-                      <input type="hidden" name="access_key" value="5e991fb5-5eef-4b77-9d55-b24c50696aa1">
-                      <input
-                      name="first_name"
-                        class="content21"
-                        placeholder="First name"
-                        type="text"
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="input-field7">
-                  <div class="input-with-label7">
-                    <b class="label7">Last name</b>
-                    <div class="input8">
-                      <input
-                      name="last_name"
-                        class="content22"
-                        placeholder="Last name"
-                        type="text"
-                        required
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="input-field8">
-                <div class="input-with-label8">
-                  <b class="label8">Email</b>
-                  <div class="input9">
-                    <input
-                    name="email"
-                      class="content23"
-                      placeholder="you@company.com"
-                      type="email"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="textarea-input-field1">
-                <div class="input-with-label9">
-                  <b class="label9">Message</b>
-                  <div class="input10">
-                    <input
-                    name="comment"
-                      class="text70"
-                      placeholder="Leave us a message..."
-                      type="text"
-                    />
-                  </div>
-              <div class="checkbox1">
-                <input class="input11" type="checkbox" />
-
-                <div class="text-and-supporting-text1">
-                  <div class="checkbox-content" required>
-                    You agree to our friendly privacy policy.
-                  </div>
-                  <div class="supporting-text7">
-                    Save my login details for next time.
-                  </div>
-                </div>
-              </div>
+            <div class="form-group">
+              <label name="email" class="form-label">Email </label>
+                <input type="email" id="email" name="email" placeholder="you@company.com" required>
             </div>
-            <button class="button48">
-              <img
-                class="placeholder-icon74"
-                alt=""
-                src="./public/placeholder5.svg"
-              />
-
-              <div class="text71">Send message</div>
-            </button>
-          </form>
-          
-        </div>
-        <div class="cage">
-          <img class="pattern-icon5" alt="" src="cage-fyndit-bottom.png" />
-        </div>
-      </section>
+            <div class="form-group">
+              <label name="message" class="form-label">A penny for your thoughts? </label>
+                <textarea id="message" name="message" placeholder="Leave us a message..." required></textarea>
+            </div>
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                <label for="privacyPolicy">You agree to our friendly privacy policy.</label>
+            </div>
+            <button class="send-message-btn" type="submit">Send message</button>
+        </form>
+     </div>
+<!--end of form-->
     </div>
+<!--end of hero section-->
+     
+          
 
 
     <!--footer-->
     <!--footer-->
-  <hr class="horizontal-rule">
   <div class="footer-content">
     <p>We're social, so if you'd like to talk about your event, get in touch!</p>
 
@@ -190,9 +120,9 @@
 
     <table class="footer-links-table">
       <tr>
-        <td><a href="#" class="footer-link">Home</a></td>
-        <td><a href="#" class="footer-link">Clubs</a></td>
-        <td><a href="#" class="footer-link">FYNDit</a></td>
+        <td><a href="index.html" class="footer-link">Home</a></td>
+        <td><a href="clubs-overview.html" class="footer-link">Clubs</a></td>
+        <td><a href="fyndit.html" class="footer-link">FYNDit</a></td>
         <td><a href="#" class="footer-link">AboutUs</a></td>
         <td><a href="#" class="footer-link">ContactUs</a></td>
       </tr>
@@ -207,5 +137,6 @@
 </div>
 </footer>
 <!--end of footer-->
+<script src="script.js"></script>
   </body>
 </html>
