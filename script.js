@@ -60,3 +60,24 @@ function openTab(evt, tabName) {
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.tablink.active').click();
 });
+
+// JavaScript for automatic scrolling
+const eventPicturesDiv = document.getElementById('event-pictures');
+
+let scrollAmount = 0;
+let scrollStep = 1;
+const maxScroll = eventPicturesDiv.scrollWidth - eventPicturesDiv.clientWidth;
+
+function scrollPictures() {
+    if (scrollAmount >= maxScroll || scrollAmount <= 0) {
+        scrollStep = -scrollStep; // Reverse direction
+    }
+
+    scrollAmount += scrollStep;
+    eventPicturesDiv.scrollTo({
+        left: scrollAmount,
+        behavior: 'smooth'
+    });
+}
+
+setInterval(scrollPictures, 30); // Adjust the speed by changing the interval

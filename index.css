@@ -125,7 +125,7 @@ body{
   flex-direction: column;
   justify-content:center;
   align-items:center;
-  top: 50em;
+  top: 53em;
   left:25%;
   right:25%;
 }
@@ -135,6 +135,10 @@ body{
   font-family:var(--font-unbounded);
   text-align: center;
   color:white;
+}
+
+.header-3d a{
+  text-decoration: none;
 }
 
 .welcome-btn{
@@ -148,19 +152,19 @@ body{
   font-size: 1em;
   border-radius:40px;
   border-color: white;
-  width:250px;
+  width:350px;
   height:60px;
 }
 
 #circle_icon{
-  margin-top:14%;
+  margin-top:10%;
 }
 
-.welcome-btn-content{
+.welcome-btn-content
+{
   display:flex;
   justify-content: center;
   align-items:center;
-  text-decoration: none;
 }
 
 .hero-section{
@@ -501,7 +505,6 @@ width:11.5rem;
 height:3.5rem;
 border:1px solid white;
 border-radius:40px;
-z-index: 100;
 }
 
 .pattern-container{
