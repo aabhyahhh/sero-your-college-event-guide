@@ -70,9 +70,10 @@
 
        <!--form-->
        <div class="form-container">
-        <form id="contactForm">
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
             <div class="form-group">
               <label name="first_name" class="form-label">First Name </label>
+              <input type="hidden" name="access_key" value="5e991fb5-5eef-4b77-9d55-b24c50696aa1">
                 <input type="text" id="firstName" name="firstName" placeholder="First name" required>
                 
                 <label name="last_name" class="form-label">Last Name </label>
