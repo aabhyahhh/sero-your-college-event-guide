@@ -134,22 +134,23 @@
     </div>
 
     <div id="Contact" class="tabcontent contact" style="display:none">
-      <form class="contact-form">
+      <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
         <div class="form-group">
             <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="first-name" placeholder="First name">
+            <input type="hidden" name="access_key" value="5e991fb5-5eef-4b77-9d55-b24c50696aa1">
+            <input name="first_name" type="text" id="first-name" name="first-name" placeholder="First name">
         </div>
         <div class="form-group">
             <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Last name">
+            <input name="last_name" type="text" id="last-name" name="last-name" placeholder="Last name">
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@company.com">
+            <input name="email" type="email" id="email" name="email" placeholder="you@company.com">
         </div>
         <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Leave us a message..."></textarea>
+            <label for="message">Connect with the Team</label>
+            <textarea name="Litmus Comment" id="message" name="message" placeholder="Leave a message here..."></textarea>
         </div>
         <button type="submit">Send message</button>
     </form>
@@ -172,7 +173,7 @@
     <table class="footer-contact" >
       <tr>
         <td>Email</td>
-        <td>+91 9326359081  <br><hr style="margin-top: 14px; margin-bottom:0px"><br> +91 8130026321</td>
+        <td>seromuj@gmail.com<br></td>
         <td>drop us a comment: <input type="text" placeholder="write here." class="input-comment"></td>
       </tr>
     </table>
