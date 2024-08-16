@@ -198,6 +198,7 @@ function renderEvents() {
 }
 
 function displayEventDetails(details) {
+  
   const eventDetailsDiv = document.getElementById('event-details');
   eventDetailsDiv.innerHTML = `
       <img src="${details.img}" alt="${details.title}">

@@ -535,6 +535,7 @@ footer{
   
   .footer-contact{
     scale:0.7;
+    
     left:0;
     display:flex;
     justify-content: center;
