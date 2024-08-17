@@ -8,7 +8,7 @@ body{
 
 /*nav-bar*/
 .navigation{
-  width:100vw;
+  width:100%;
   height:auto;
   display:flex;
   flex-direction:row;
@@ -107,9 +107,11 @@ body{
 .hero-section{
   position: relative;
   display:flex;
+  width: 100%;
 }
 
 .event-container{
+  width: 100%;
   position:absolute;
   top:25%;
   margin:0 10%;
@@ -119,7 +121,7 @@ body{
 
 .left-container{
   display:block;
-  width:60%;
+  width:50%;
 }
 
 .date-time{
@@ -159,14 +161,20 @@ body{
   border-radius: 40px;
   font-size:1.2em;
   font-family: var(--font-unbounded);
+  text-decoration: none;
 }
 
 .right-container{
-  float:right;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 40%;
+  height: 40vh;
 }
 
 .event-img{
-  scale:1.3;
+  width: 80%;
+  margin-right: 2em;
 }
 
 /*responsive tabs*/
@@ -207,7 +215,7 @@ body{
 }
 
 .tabcontent p {
-  margin: 0;
+  margin: 5px;
 }
 
 /*overview*/
@@ -525,7 +533,7 @@ footer{
 
 
 /* mobile version*/
-@media(min-width:320px) and (max-width:480px){
+@media(max-width:480px){
   body{
     width:100vw;
     overflow-x:hidden;
@@ -539,6 +547,7 @@ footer{
 
   .pattern-1{
     position: absolute;
+    width: 100%;
   }
 
   .event-container{
@@ -571,12 +580,16 @@ footer{
   .right-container{
     margin-top:0;
     width:100%;
+    height: auto;
+    flex-direction: column;
   }
   .event-img{
-    scale:0.8;
+    scale:70%;
     margin-top:-9%;
-    float:left;
+    float:center;
     margin-left:-9%;
+    margin-right: 0;
+    margin-bottom: 1em;
   }
 
   .tabs{
@@ -675,7 +688,7 @@ footer{
 }
 
 
-/*tablet version*/
+/*laptop version*/
 @media (min-width: 768px) and (max-width:1024px){
   
     /*nav*/
@@ -702,7 +715,7 @@ footer{
   
     .pattern-1{
       position: absolute;
-      height:inherit
+      width: 100%;
     }
   
     .event-container{
@@ -739,13 +752,13 @@ footer{
       float:right;
     }
     .event-img{
-      top:0;
+      margin-top: -9%;
       scale:0.8;
     }
 
     .tabs{
       position:relative;
-      top:0;
+      top:2.5em;
     }
   
     .team-container,.gallery-container{
@@ -821,3 +834,145 @@ footer{
 
   }
 
+/* Monitor version */
+@media (min-width: 1024px) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .hero-section {
+    height: 60vh;
+  }
+
+  .pattern-1 {
+    position: absolute;
+    width: 100%;
+  }
+
+  .event-container {
+    margin: 0 5%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-container {
+    width: 45%;
+  }
+
+  .date-time {
+    font-size: 0.7em;
+    margin-bottom: -3%;
+  }
+
+  .event-name {
+    font-size: 2.8em;
+  }
+
+  .venue, .organiser {
+    font-size: 1.3em;
+  }
+
+  .register-btn {
+    scale: 1.1;
+  }
+
+  .right-container {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .event-img {
+    width: 60%;
+    margin: 0;
+    margin-bottom: 2em;
+  }
+
+  .tabs {
+    margin: 0 20%;
+    margin-top: 20%;
+  }
+
+  .tablink {
+    font-size: 0.9em;
+  }
+
+  .gallery-container, .team-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-img, .team-member-img {
+    width: 100%;
+  }
+
+  .form-group label, .contact-info h2 {
+    font-size: 1.8em;
+  }
+
+  .contact {
+    width: 80vw;
+    margin: 2% 10%;
+  }
+
+  .contact-info {
+    width: 100%;
+    line-height: 1.4em;
+  }
+
+  /* Monitor footer */
+  .footer-section {
+    margin-top: 15%;
+  }
+
+  footer {
+    display: relative;
+  }
+
+  hr {
+    position: absolute;
+  }
+
+  .footer-content p {
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  .footer-contact {
+    scale: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .footer-logo {
+    scale: 0.3;
+    margin-top: -40px;
+  }
+
+  .footer-links-table {
+    width: 100%;
+    scale: 1;
+    margin-top: 0;
+  }
+
+  .footer-links-table tr td {
+    width: 100%;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
