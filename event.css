@@ -376,6 +376,9 @@ button[type="submit"]:hover {
     .contact-form {
         margin-bottom: 20px;
     }
+    .tablink {
+      padding: 10px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -398,11 +401,6 @@ button[type="submit"]:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
-  .tablink {
-      padding: 10px;
-  }
-}
 
 @media screen and (max-width: 480px) {
   .tablink {
@@ -415,6 +413,33 @@ button[type="submit"]:hover {
       margin: 15px;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .tablink {
+    padding: 10px;
+}
+.contact-form, .contact-info {
+  flex: 1;
+  margin-right: 0;
+}
+.contact-form {
+  margin-bottom: 20px;
+}
+}
+
+@media (min-width: 1024px){
+  .tablink {
+    padding: 10px;
+}
+.contact-form, .contact-info {
+  flex: 1;
+  margin-right: 0;
+}
+.contact-form {
+  margin-bottom: 20px;
+}
+}
+
 
 
 /*footer*/
@@ -688,7 +713,7 @@ footer{
 }
 
 
-/*laptop version*/
+/*tablet version*/
 @media (min-width: 768px) and (max-width:1024px){
   
     /*nav*/
