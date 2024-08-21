@@ -62,21 +62,26 @@
     <!-- end of nav bar-->
 
     <div class="hero-section">
-      <img src="background_pattern.svg" class="pattern-1" style="width:100%">
+      <img src="background_pattern.svg" class="pattern-1" alt="Background Pattern">
       <div class="event-container">
-        <div class="left-container">
-          <h4 class="date-time">15th August, 2024 | 4:00 P.M.</h4>
-          <p class="event-name">Pool party at XYZ Resort</p>
-          <p class="venue"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> XYZ Resort</p>
-          <p class="organiser">Organised by: <span class="organiser-club">Club name</span></p>
-          <button class="register-btn">Register</button>
-        </div>
-        
-        <div class="right-container">
-          <img src="event-img.png" class="event-img">
-        </div>
+          <div class="left-container">
+              <h4 class="date-time">15th August, 2024 | 4:00 P.M.</h4>
+              <p class="event-name">Pool party at XYZ Resort</p>
+              <p class="venue">
+                  <i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> XYZ Resort
+              </p>
+              <p class="organiser">
+                  Organised by:
+                  <span class="organiser-club">Club name</span>
+              </p>
+              <button class="register-btn">Register</button>
+          </div>
+          <div class="right-container">
+              <img src="event-img.png" class="event-img" alt="Event Image">
+          </div>
       </div>
-    </div>
+  </div>
+  
 
     <!-- tab switching -->
      <div class="tabs">
@@ -138,15 +143,15 @@
         <div class="form-group">
             <label for="first-name">First name</label>
             <input type="hidden" name="access_key" value="5e991fb5-5eef-4b77-9d55-b24c50696aa1">
-            <input name="first_name" type="text" id="first-name" name="first-name" placeholder="First name">
+            <input name="first_name" type="text" id="first-name" name="first-name" placeholder="First name" required>
         </div>
         <div class="form-group">
             <label for="last-name">Last name</label>
-            <input name="last_name" type="text" id="last-name" name="last-name" placeholder="Last name">
+            <input name="last_name" type="text" id="last-name" name="last-name" placeholder="Last name" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input name="email" type="email" id="email" name="email" placeholder="you@company.com">
+            <input name="email" type="email" id="email" name="email" placeholder="you@company.com" required>
         </div>
         <div class="form-group">
             <label for="message">Connect with the Team</label>
