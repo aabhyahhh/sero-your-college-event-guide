@@ -676,11 +676,11 @@ footer{
     left: 20%;
   }
   .carousel-container{
-    top:20%;
+    top:20%; 
   }
    
   .carousel-item {
-    min-width: 100%;
+    min-width:100%;
   }
 
   .controls {
