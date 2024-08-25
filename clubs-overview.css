@@ -80,6 +80,18 @@ body{
   width:100%;
 }
 
+@media(min-width:320px) and (max-width:480px){
+  .nav-list{
+    margin-top:10px;
+    margin-right:15px;
+  }
+  .logo{
+    width:90px;
+    height:45px;
+  }
+  }
+
+
 @media(max-width:480px){
   .hideOnMobile{
     display:none;
@@ -119,19 +131,21 @@ body{
   font-family:var(--font-unbounded);
 }
 
-.clubs-text{
-  position:absolute;
-  color:white;
-  top:25%;
-  font-size:3em;
-  font-family:"EB Garamond";
-  width:75%;
-  line-height:1;
+.clubs-text {
+  position: absolute;
+  color: white;
+  top: 25%;
+  font-size: 3em;
+  font-family: "EB Garamond";
+  width: 75%;
+  line-height: 1;
   text-align: center;
 }
 
-.clubs-text-frame{
-  display:inline-block;
+.clubs-text-frame {
+  display: inline-block;
+  width: fit-content;
+  height: fit-content;
 }
 
 .hero-img-bottom{
@@ -163,6 +177,61 @@ body{
   margin-right:10px;
 }
 
+@media(min-width:320px) and (max-width:480px){
+  
+  .clubs-title{
+    font-size:3.5em;
+    top:0;
+  }
+  .clubs-text {
+    font-size: 1.5em; /* Adjust font size for mobile */
+    width: 90%; /* Increase width to take more space */
+    top: 20%; /* Adjust top position for better alignment */
+    line-height: 1.2; /* Increase line-height for readability */
+  }
+
+  .clubs-text-frame {
+    display: inline-block;
+    width: auto; /* Adjust width for responsive scaling */
+    height: auto; /* Adjust height for responsive scaling */
+  }
+
+  img.clubs-text-frame1, img.clubs-text-frame2 {
+    width: 20px; /* Scale down the images */
+    height: 20px; /* Maintain aspect ratio by adjusting height */
+  }
+   .hero-section{
+    width:100%;
+    height:70vh;
+  }
+  
+  .hero-img-bottom{
+    top:75%;
+  }
+
+  .scrollbar-animation{
+    position:relative;
+    height:30px;
+  }
+
+  .marquee-text{
+  font-size:1em;
+  margin-top:-30px;
+  }
+
+  .asterisk-svg{
+    scale:0.5;
+    margin-top:5px;
+  }
+  
+}
+
+/***************** end of hero section *************************/
+
+
+
+
+/*************** Upcoming events container ********************************/
 .upc-events-container{
   position:relative;
 }
@@ -205,8 +274,22 @@ body{
   background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
 }
 
+@media(min-width:320px) and (max-width:480px){
+  .upc-events-container{
+    width:100%;
+    height:110vh;
+  }
 
-/* carousel*/
+  .title-text{
+    width:60%;
+    font-size: 1.7em;
+    text-align: center;
+    left: 20%;
+  }
+}
+
+
+/************** carousel *****************/
 .carousel-container {
   position:absolute;
   width:100%;
@@ -283,6 +366,36 @@ body{
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex: 0 0 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-item {
+    flex: 0 0 100%;
+    padding: 10px 0;
+  }
+
+  .carousel-item,.carousel-item-link{
+    min-width:100%;
+  }
+  .carousel-container {
+    width: 100%;
+  }
+
+  .controls {
+    justify-content: space-around;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 14px;
+  }
+}
 
 /*all clubs section*/
 .all-clubs{
@@ -701,95 +814,6 @@ footer {
 
 /* mobile version*/
 @media(min-width:320px) and (max-width:480px){
-  body{
-    width:100vw;
-    overflow-x:hidden;
-    margin:0 auto;
-    box-sizing:border-box;
-  }
-
-  .hero-section{
-    width:100%;
-    height:70vh;
-  }
-
-  .clubs-title{
-    font-size:3.5em;
-    top:0;
-  }
-
-  .clubs-text{
-    display:inline-block;
-    width:90%;
-    top:15%;
-    line-height:32px;
-    font-size: 2em;
-  }
-
-  .clubs-text-frame1, .clubs-text-frame2{
-    scale:0.7;
-  }
-
-  .clubs-text-frame{
-    display:inline-block;
-    margin:0;
-    padding:0;
-  }
-
-  .hero-img-bottom{
-    top:75%;
-  }
-
-  .scrollbar-animation{
-    position:relative;
-    height:30px;
-  }
-
-  .marquee-text{
-  font-size:1em;
-  margin-top:-30px;
-  }
-
-  .asterisk-svg{
-    scale:0.5;
-    margin-top:5px;
-  }
-
-  .upc-events-container{
-    width:100%;
-    height:110vh;
-  }
-
-  .title-text{
-    width:60%;
-    font-size: 1.7em;
-    text-align: center;
-    left: 20%;
-  }
-  .carousel-container{
-    top:20%; 
-  }
-   
-  .carousel-item {
-    min-width:100%;
-  }
-
-  .controls {
-    justify-content: space-around;
-    margin-top:15%;
-    position:absolute;
-  
-  }
-  
-  button {
-    padding: 8px;
-    font-size: 14px;
-  }
-
-  .prev, .next{
-    bottom:40px;
-  }
-
   .all-clubs{
     width:100%;
     height:60em;

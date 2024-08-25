@@ -15,14 +15,18 @@ let currentSlide = 0;
 
 function showSlide(index) {
   const slides = document.querySelectorAll('.carousel-item');
-  if (index >= slides.length) {
+  const totalSlides = slides.length;
+  const slideWidth = slides[0].offsetWidth;
+
+  if (index >= totalSlides) {
     currentSlide = 0;
   } else if (index < 0) {
-    currentSlide = slides.length - 1;
+    currentSlide = totalSlides - 1;
   } else {
     currentSlide = index;
   }
-  document.querySelector('.carousel').style.transform = `translateX(-${currentSlide * 25}%)`;
+
+  document.querySelector('.carousel').style.transform = `translateX(-${currentSlide * slideWidth}px)`;
 }
 
 function nextSlide() {
@@ -33,9 +37,14 @@ function prevSlide() {
   showSlide(currentSlide - 1);
 }
 
+window.addEventListener('resize', () => {
+  showSlide(currentSlide);
+});
+
 document.addEventListener('DOMContentLoaded', () => {
   showSlide(currentSlide);
 });
+
 
 
 // responsive tabs
