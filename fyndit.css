@@ -19,7 +19,7 @@ body{
 
 .logo{
   width: 140px;
-  height:70px;
+  height:100px;
   top:10px;
   left:5px;
 }
@@ -535,7 +535,7 @@ footer{
   
   .footer-contact{
     scale:0.7;
-    
+
     left:0;
     display:flex;
     justify-content: center;
