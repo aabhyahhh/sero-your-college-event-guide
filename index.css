@@ -411,6 +411,10 @@ body{
     bottom:70%;
     scale:0.3;
    }  
+
+   .clubs-container-text{
+    font-size:1.6rem;
+   }
 }
 
 /*   */
@@ -508,18 +512,14 @@ border-radius:40px;
     margin-left:-20%;
     width:80%;
   }
-}
-.pattern-container{
-  position:relative;
-  display:block;
-  height:100%;
+  .fyndit-container-text{
+    font-size:1.6rem;
+   }
 }
 
 .pattern-3{
   width:100%;
   position: relative;
-  margin-top:-300px;
-  top:0;
 }
 
 .shape-3{
