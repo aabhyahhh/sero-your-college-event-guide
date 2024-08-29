@@ -198,73 +198,94 @@
 
 
 <!-- all clubs section-->
- <div class="all-clubs">
+<div class="all-clubs">
   <img class="all-clubs-background" src="background-blue.svg">
-
   <p class="all-clubs-title">All Clubs</p>
-        
-    <!--search icon-->
-    <div class="search-bar">
-    <div id="cover">
-      <form method="get" action="">
-        <div class="tb">
-          <div class="td"><input class="search-input" type="text" placeholder="Search" required></div>
-          <div class="td" id="s-cover">
-            <button class="search-submit" type="submit">
-              <div id="s-circle"></div>
-              <span></span>
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-    </div>
  
-    <!--block display of all clubs-->
-    <div class="club-grid">
-<a href="club.html">
+  <!-- Search bar -->
+  <div class="search-bar">
+      <div id="cover">
+          <form method="get" action="">
+              <div class="tb">
+                  <div class="td">
+                      <input class="search-input" id="searchInput" onkeyup="searchClubs()" type="text" placeholder="Search" required>
+                  </div>
+                  <div class="td" id="s-cover">
+                      <button class="search-submit" type="submit">
+                          <div id="s-circle"></div>
+                          <span></span>
+                      </button>
+                  </div>
+              </div>
+          </form>
+      </div>
+  </div>
+ 
+  <!-- Club Grid -->
+  <div class="club-grid">
+
+    <!--visible clubs-->
+      <a href="/clubs/Coreographia">
+          <div class="club-card">
+              <img src="club-banner-1.png" alt="Coreographia - The dance society">
+              <div class="club-name">Coreographia - The dance society</div>
+              <div class="club-keywords" style="display: none;">dance, choreography, coreografia, performance</div>
+          </div>
+      </a>
+ 
+      <a href="/clubs/Aperture">
+          <div class="club-card">
+              <img src="club-banner-2.png" alt="Aperture - The photography club">
+              <div class="club-name">Aperture - The photography club</div>
+              <div class="club-keywords" style="display: none;">photography, camera</div>
+          </div>
+      </a>
+ 
+      <a href="/clubs/Cinefilia">
+          <div class="club-card">
+              <img src="club-banner-3.png" alt="Cinefilia - The dramatic society">
+              <div class="club-name">Cinefilia - The dramatic society</div>
+              <div class="club-keywords" style="display: none;">drama, theater, cinefilia, acting</div>
+          </div>
+      </a>
+ 
+      <a href="/clubs/Litmus">
+          <div class="club-card">
+              <img src="club-banner-4.png" alt="Litmus">
+              <div class="club-name">Litmus - The literature club</div>
+              <div class="club-keywords" style="display: none;">literature, writing, books, litmus</div>
+          </div>
+      </a>
+ 
+      <a href="/clubs/MUJ-ACM">
+          <div class="club-card">
+              <img src="club-banner-5.png" alt="MUJ ACM">
+              <div class="club-name">MUJ ACM</div>
+              <div class="club-keywords" style="display: none;">computing, programming, muj acm</div>
+          </div>
+      </a>
+ 
+      <a href="/clubs/MusicClub">
+          <div class="club-card">
+              <img src="club-banner-6.png" alt="The Music Club">
+              <div class="club-name">The Music Club</div>
+              <div class="club-keywords" style="display: none;">music, singing, instruments, band</div>
+          </div>
+      </a>
+
+
+
+       <!-- Hidden Clubs -->
+ <a href="/clubs/Glitch" class="hidden-club">
   <div class="club-card">
-    <img src="club-banner-1.png" alt="Robotics Club">
-    <div class="club-name">Coreografia - The dance society</div>
-</div>
+      <img src="glitch-banner.png" alt="Glitch - Esports society">
+      <div class="club-name">Glitch - Esports society</div>
+      <div class="club-keywords" style="display: none;">esports, gaming, glitch</div>
+  </div>
 </a>
 
-<a href="#">
-<div class="club-card">
-    <img src="club-banner-2.png" alt="Business Club">
-    <div class="club-name">Aperture - The photography club</div>
-</div>
-</a>
-
-<a href="#">
-<div class="club-card">
-    <img src="club-banner-3.png" alt="Art Club">
-    <div class="club-name">Cinefilia - The dramatic society</div>
-</div>
-</a>
-
-<a href="#">
-<div class="club-card">
-    <img src="club-banner-4.png" alt="Photography Club">
-    <div class="club-name">Litmus</div>
-</div>
-</a>
-
-<a href="#">
-<div class="club-card">
-    <img src="club-banner-5.png" alt="Chess Club">
-    <div class="club-name">MUJ ACM</div>
-</div>
-</a>
-
-<a href="#">
-  <div class="club-card">
-    <img src="club-banner-6.png" alt="Debate Club">
-    <div class="club-name">The Music Club</div>
-</div>
-</a>
-
-</div>
+  </div>
+ </div>
 
 <img src="background-pattern3.svg" class="pattern-3" width="100%">
 </div>

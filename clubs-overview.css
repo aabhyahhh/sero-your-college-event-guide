@@ -234,11 +234,15 @@ body{
 /*************** Upcoming events container ********************************/
 .upc-events-container{
   position:relative;
+  display:block;
+  justify-content:center;
+  align-items:center;
 }
 
 .upc-events-title{
   position:absolute;
   top:5%;
+  text-align: center;
   width:100%;
   height:auto;
   z-index:10;
@@ -277,7 +281,7 @@ body{
 @media(min-width:320px) and (max-width:480px){
   .upc-events-container{
     width:100%;
-    height:110vh;
+    height:125vh;
   }
 
   .title-text{
@@ -400,6 +404,7 @@ body{
 /*all clubs section*/
 .all-clubs{
   margin-top:10px;
+  height:auto;
   display:flex;
   position:relative;
 }
@@ -443,7 +448,7 @@ body{
 }
 #cover {
   position: absolute;
-  top: 9%;
+  top: 7%;
   left:30%;
   width: 1350px;
   padding: 35px;
@@ -559,6 +564,9 @@ form {
 
 
 /*block display*/
+.hidden-club{
+display: none;
+}
 
 .club-grid {
   display: grid;

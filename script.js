@@ -45,6 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
   showSlide(currentSlide);
 });
 
+// search - all clubs
+function searchClubs() {
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const clubs = document.querySelectorAll('.club-card');
+ 
+  clubs.forEach(club => {
+      const clubName = club.querySelector('.club-name').textContent.toLowerCase();
+      const keywords = club.querySelector('.club-keywords').textContent.toLowerCase();
+ 
+      if (clubName.includes(query) || keywords.includes(query)) {
+          club.parentElement.style.display = 'block';
+      } else {
+          if (!club.parentElement.classList.contains('hidden-club')) {
+              club.parentElement.style.display = 'none';
+          }
+      }
+  });
+ }
 
 
 // responsive tabs
