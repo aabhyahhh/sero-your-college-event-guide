@@ -281,14 +281,14 @@ font-size:2.3em;
   }
 
   .mobile-about-right{
-    height:45vh;
+    height:50vh;
     width:100vw;
     position:relative;
   }
 
   .mobile-polaroid-container{
     width:100vw;
-    top:5%;
+    top:3.5%;
     left:2%;
   }
 
