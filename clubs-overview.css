@@ -402,6 +402,7 @@ body{
 }
 
 /*all clubs section*/
+
 .all-clubs{
   margin-top:10px;
   height:auto;
@@ -612,7 +613,7 @@ display: none;
 .pattern-3{
   width:100%;
   position:absolute;
-  top:55%;
+  bottom:0;
 }
 
 /*footer*/
