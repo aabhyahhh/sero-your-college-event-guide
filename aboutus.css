@@ -117,11 +117,6 @@ body{
 
 /*intro content*/
 .intro-section{
-  /*position:relative;
-  width:100vw;
-  display:flex;
-  justify-content: center;
-  align-items:center;*/
   position: relative;
   width: 100vw;
   display: flex;
@@ -169,9 +164,6 @@ body{
 }
 
 .about-container{
-  /*position:absolute;
-  width:100%;
-  top:13%;*/
   position: relative; /* Changed from absolute */
   width: 90%; /* Adjust width as needed */
   margin: 2rem auto; /* Center horizontally and add space */
@@ -257,65 +249,61 @@ font-size:2.3em;
   .intro-section{
     padding:0;
   }
-  
-  .about-container{
-    margin:0;
-  }
   .join-wrapper{
    margin-top:-30px;
   }   
   
-  .left{
-    width:90%;
+  .mobile-about{
+    position:relative;
+    display:block;
     margin:0;
-    z-index: 100;
-    margin:0 5%;
+    padding:0;
+    min-height:fit-content;
   }
-  
-  .left h3{
-    font-size:1.2em;
+
+  .mobile-about-left{
+    width:90vw;
+    position:relative;
   }
-  
-  .left p{
-    font-size: 1em;
-    z-index: 100;
+
+  .mobile-about-left h3{
+    font-size:1.3em;
   }
-  .right{
-    width:100%;
+
+  .mobile-about-left p{
+    font-size:0.8em;
   }
-  
-  .polaroid-container{
-    position: relative;;
-    z-index: 1;
-    top:7vh;
-    left:12%;
-    scale:0.9;
+
+  .get-in-touch{
+    width:10em;
+    height:2.5em;
+    font-size:0.8em;
   }
-  
-  .polaroid {
+
+  .mobile-about-right{
+    height:50vh;
+    width:100vw;
+    position:relative;
+  }
+
+  .mobile-polaroid-container{
+    width:100vw;
+    top:0;
+    left:0;
+  }
+
+  .polaroid{
+    height:auto;
+    width:150px;
+    scale:0.85;
+  }
+
+  .polaroid:nth-child(2){
+    left:135px;
+    top:75px;
+  }
+  }
     
-    width: 150px; /* Adjust as needed */
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transform: rotate(-10deg); /* Adjust as needed */
-    transition: transform 0.2s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  }
-  
-  .polaroid img {
-    width: 100%;
-    display: block;
-    height:70%;
-  }
-  
-  .polaroid:nth-child(2) {
-    transform: rotate(15deg); /* Adjust as needed */
-    top: 0px; /* Adjust as needed */
-    left:100px; /* Adjust as needed */
-  }
-  }
-  
   
   /*tablet version*/
   @media(min-width:768px) and (max-width:1024px) {
@@ -600,4 +588,4 @@ footer {
 .social-icons-link{
   margin:0 8px;
 }
-}
+}  
