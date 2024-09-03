@@ -337,7 +337,7 @@ footer {
     display:flex;
     flex-direction:column;
     justify-content: space-between;
-
+  }
   
   .footer-logo{
    scale:0.2;
@@ -550,7 +550,8 @@ footer {
 
   .form-label{
     font-size: 0.9em;
-=======
+  }
+}
 
 /*footer*/
 .footer-upper {
