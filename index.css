@@ -62,7 +62,10 @@ body{
   width:40%;
   z-index:999;
   color:#0a0909;
+
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+
   box-shadow:-10px 0  -10px rgba(0,0,0,0.1);
   display:none;
   flex-direction: column;
@@ -314,6 +317,7 @@ body{
   .intro-content{
     scale:0.2;
     margin:0;
+    
   }
   .shape-2{
     right:0;
