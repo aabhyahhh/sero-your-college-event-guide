@@ -5,7 +5,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <link rel="shortcut icon" href="logo.png" type="x-icon">
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./contactus.css" />
+    <link rel="stylesheet" href="./subscribe.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Ciento:wght@900&display=swap"
@@ -28,6 +28,7 @@
     />
 
     <script src="https://kit.fontawesome.com/0d02b672df.js" crossorigin="anonymous"></script>
+    <title>Subscribe Now</title>
   </head>
   <body>
    <!--navigation bar -->
@@ -62,10 +63,10 @@
     <!--hero section-->
     <div class="hero-section">
       <div class="pattern-container"><img class="pattern1" src="background-glow_purple.svg" width="100%"></div>
-      <h1 class="contact-us-title">Contact Us</h1>
+      <h1 class="contact-us-title">Subscribe Now!</h1>
       <div class="hero-content">
-        <p class="caption-1">Join our mailing list NOW! <span class="emoji-frame"><img src="emoji1.png" class="emoji"></span></p>
-        <p class="caption-2"> also drop your queries so we can keep improving xo :)</p>
+        <!--<p class="caption-1"><span class="emoji-frame"><img src="emoji1.png" class="emoji"></span></p>-->
+        <p class="caption-2">Never miss an update from your favourite club!</p>
       </div>
 
        <!--form-->
@@ -84,11 +85,19 @@
                 <input type="email" id="email" name="email" placeholder="you@company.com" required>
             </div>
             <div class="form-group">
+              <label name="phone number" class="form-label">Phone Number </label>
+                <input type="number" id="phone number" name="phone number" placeholder="+91 987654321" required>
+            </div>
+            <div class="form-group">
+              <label name="club" class="form-label">Club Name</label>
+                <input type="text" id="club" name="Subscribed Club" placeholder="XYZ club" required>
+            </div>
+            <!--<div class="form-group">
               <label name="message" class="form-label">A penny for your thoughts? </label>
                 <textarea id="message" name="message" placeholder="Leave us a message..." required></textarea>
-            </div>
+            </div>-->
             
-            <button class="send-message-btn" type="submit">Send message</button>
+            <button class="send-message-btn" type="submit">Submit</button>
         </form>
      </div>
 <!--end of form-->          
