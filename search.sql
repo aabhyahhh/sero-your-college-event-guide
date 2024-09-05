@@ -16,4 +16,7 @@ INSERT INTO clubs (id, club_name, club_description, club_page_url, keywords) VAL
 ('007', 'Cactus', 'The official Fashion society', 'cactus.html', 'Fashion, Social, CULTURAL , Individuality'),
 ('008', 'GDSC', 'The official Google Developer society', 'gdsc.html', 'Google, Developers, Technical , Technologies '),
 ('009', 'HumanofMUJ', 'The official Photoblog society', 'litmus.html', 'photoblog , Journaling, experiences , empowering '),
-('010', 'GLITCH', 'The official eSports society', 'glitch.html', 'eSports, anime, VFX , gaming');
+('010', 'GLITCH', 'The official eSports society', 'glitch.html', 'eSports, anime, VFX , gaming'),
+('011', 'IEEE', 'The official Technical Society', 'ieee.html', 'Technical, Society, technology  , engineers '),
+('012', 'TMC', 'The official Music Society', 'tmc.html', 'Music , Society , diverse  , musical '),
+('013', 'Rotaract', 'The official environment society', 'rotaract.html', ' environment , socialservice, Green , service ');
