@@ -253,108 +253,56 @@ body{
   display:flex;
 }
 
-.title-text {
-  position: absolute;
-  color: white;
-  margin-top: 0;
-  left: 27.54%;
-  /* For larger screens */
+.title-text{
+  position:absolute;
+  color:white;
+  margin-top:0;
+  left:27.54%;
   font-family: var(--font-unbounded);
-  font-size: 4vw;
-  /* Responsive font size based on viewport width */
-  text-align: center;
-  /* Ensure text stays centered */
-  max-width: 100%;
+  font-size:4em;
 }
 
-/* Media Queries for Smaller Screens */
-@media (max-width: 768px) {
-  .title-text {
-    font-size: 6vw;
-    /* Increase font size for tablet-sized devices */
-    left: 20%;
-    /* Adjust horizontal positioning */
-    width: 60%;
-  }
-}
-
-@media (max-width: 480px) {
-  .title-text {
-    font-size: 8vw;
-    /* Further increase font size for mobile devices */
-    left: 10%;
-    /* Center the text for smaller devices */
-    width: 80%;
-    /* Allow more space for the title */
-  }
-}
-
-.gradient-line {
-  position: absolute;
-  z-index: 1;
-  margin-top: 3%;
-  left: 0;
-  width: 25vw;
-  /* Adjusts based on viewport width */
-  max-width: 100%;
-  /* Ensures it doesn't overflow */
-  height: 5px;
+.gradient-line{
+  position:absolute;
+  z-index:1;
+  margin-top:3%;
+  left:0;
+  width: 25%;
+  height: 5px; 
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
 }
 
-/* Media Queries for Smaller Screens */
-@media (max-width: 768px) {
-  .gradient-line {
-    width: 50vw;
-    /* Adjust the width to be 50% of viewport width on smaller screens */
-  }
-}
-
-@media (max-width: 480px) {
-  .gradient-line {
-    width: 75vw;
-    /* Adjust to 75% of viewport width on mobile screens */
-  }
-}
-.gradient-line-1 {
-  position: absolute;
-  z-index: 1;
-  margin-top: 3%;
-  right: 0;
-  width: 25vw;
-  /* Adjust based on viewport width */
-  max-width: 100%;
-  /* Ensure it doesn’t overflow */
-  height: 5px;
+.gradient-line-1{
+  position:absolute;
+  z-index:1;
+  margin-top:3%;
+  right:0;
+  width: 25%;
+  height: 5px; 
   background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
 }
 
-/* Responsive Layout for .upc-events-container and .title-text */
-@media (min-width: 320px) and (max-width: 480px) {
-  .upc-events-container {
-    width: 100%;
-    height: 125vh;
+@media(min-width:320px) and (max-width:480px){
+  .upc-events-container{
+    width:100%;
+    height:125vh;
   }
 
-  .title-text {
-    width: 60%;
+  .title-text{
+    width:60%;
     font-size: 1.7em;
     text-align: center;
     left: 20%;
   }
-
-  .gradient-line-1 {
-    width: 75vw;
-    /* Adjust the width for smaller screens */
-  }
 }
+
 
 /************** carousel *****************/
 .carousel-container {
-  position: absolute;
-  width: 100%;
-  overflow: hidden;
-  top: 20%;
+  position:absolute;
+  width:100%;
+  overflow:hidden;
+  top:20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -364,10 +312,10 @@ body{
   display: flex;
   width: 100%;
   transition: transform 0.5s ease;
+
 }
 
-.carousel-item,
-.carousel-item-link {
+.carousel-item , .carousel-item-link{
   min-width: 25%;
   box-sizing: border-box;
   padding: 10px;
@@ -377,12 +325,8 @@ body{
 
 .carousel-item img {
   width: 100%;
-  max-width: 300px;
-  /* Limits the maximum width of the image */
   height: auto;
-  border-radius: 15px;
-  object-fit: cover;
-  /* Ensures the image covers the container without distorting */
+  border-radius:15px;
 }
 
 .details {
@@ -391,14 +335,14 @@ body{
   padding: 10px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  font-family: var(--font-unbounded);
+  font-family:var(--font-unbounded);
 }
 
-.carousel-club-name {
-  font-family: 'Josefin Sans';
+.carousel-club-name{
+  font-family:'Josefin Sans' ;
 }
 
-.carousel-item-link {
+.carousel-item-link{
   text-decoration: none;
 }
 
@@ -412,9 +356,8 @@ body{
   box-sizing: border-box;
 }
 
-.prev,
-.next {
-  scale: 1.2;
+.prev, .next {
+  scale:1.2;
   font-family: var(--font-unbounded);
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
@@ -424,51 +367,39 @@ body{
   border-radius: 5px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
 }
 
-.prev:hover,
-.next:hover {
+.prev:hover,.next:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 
 /* Media Queries */
 @media (max-width: 768px) {
   .carousel-item {
-    min-width: 50%;
-  }
-
-  .carousel-container {
-    top: 10%;
-  }
-
-  .carousel-item img {
-    max-width: 200px;
-    /* Adjust for smaller screens */
+    flex: 0 0 50%;
   }
 }
 
 @media (max-width: 480px) {
   .carousel-item {
-    min-width: 100%;
+    flex: 0 0 100%;
     padding: 10px 0;
   }
 
+  .carousel-item,.carousel-item-link{
+    min-width:100%;
+  }
   .carousel-container {
     width: 100%;
-    top: 5%;
-  }
-
-  .carousel-item img {
-    max-width: 100%;
-    /* Ensure images scale properly on small devices */
   }
 
   .controls {
     justify-content: space-around;
   }
 
-  .prev,
-  .next {
+  button {
     padding: 8px;
     font-size: 14px;
   }
@@ -914,94 +845,14 @@ footer {
     left:20%;
   }
 
-    .search-bar {
-      position: absolute;
-      top: 13%;
-      left: 20%;
-      justify-content: center;
-      align-items: center;
-      width: 60%;
-      /* Make width responsive */
-      max-width: 800px;
-      /* Limit max width */
-      display: flex;
-      transform: scale(1);
-      /* Remove scale */
-    }
-  
-    .search-input {
-      width: 100%;
-      /* Make input fill container */
-      padding: 10px 15px;
-      /* Add padding for better appearance */
-      font-size: 1.2em;
-    }
-  
-    .search-submit {
-      padding: 10px;
-      cursor: pointer;
-      background-color: #333;
-      /* Adjust color */
-      border: none;
-      color: white;
-      font-size: 1.2em;
-    }
-  
-    #s-circle {
-      /* Customize as needed */
-    }
-  
-    @media (max-width: 1024px) {
-      .search-bar {
-        top: 10%;
-        left: 15%;
-        width: 70%;
-        /* Adjust width for tablets */
-      }
-  
-      .search-input {
-        font-size: 1.1em;
-        /* Slightly reduce font size */
-      }
-    }
-  
-    @media (max-width: 768px) {
-      .search-bar {
-        top: 8%;
-        left: 10%;
-        width: 80%;
-        /* Further adjust for smaller screens */
-      }
-  
-      .search-input {
-        font-size: 1em;
-        /* Decrease font size */
-      }
-  
-      .search-submit {
-        font-size: 1em;
-      }
-    }
-  
-    @media (max-width: 480px) {
-      .search-bar {
-        top: 5%;
-        left: 5%;
-        width: 90%;
-        /* Full width on small screens */
-      }
-  
-      .search-input {
-        font-size: 0.9em;
-        /* Smaller font for mobile */
-      }
-  
-      .search-submit {
-        font-size: 0.9em;
-        padding: 8px;
-        /* Adjust button size */
-      }
-    }
+  .search-bar{
+    position:absolute;
+    top:18%;
+    left:0%;
+    justify-content:center;
+    align-items:center;
+    scale:0.3;
+  }
 
   .club-card img{
     height:100px;
@@ -1151,94 +1002,14 @@ footer {
         left:3%;
       }
     
-         .search-bar {
-           position: absolute;
-           top: 13%;
-           left: 20%;
-           justify-content: center;
-           align-items: center;
-           width: 60%;
-           /* Make width responsive */
-           max-width: 800px;
-           /* Limit max width */
-           display: flex;
-           transform: scale(1);
-           /* Remove scale */
-         }
-    
-         .search-input {
-           width: 100%;
-           /* Make input fill container */
-           padding: 10px 15px;
-           /* Add padding for better appearance */
-           font-size: 1.2em;
-         }
-    
-         .search-submit {
-           padding: 10px;
-           cursor: pointer;
-           background-color: #333;
-           /* Adjust color */
-           border: none;
-           color: white;
-           font-size: 1.2em;
-         }
-    
-         #s-circle {
-           /* Customize as needed */
-         }
-    
-         @media (max-width: 1024px) {
-           .search-bar {
-             top: 10%;
-             left: 15%;
-             width: 70%;
-             /* Adjust width for tablets */
-           }
-    
-           .search-input {
-             font-size: 1.1em;
-             /* Slightly reduce font size */
-           }
-         }
-    
-         @media (max-width: 768px) {
-           .search-bar {
-             top: 8%;
-             left: 10%;
-             width: 80%;
-             /* Further adjust for smaller screens */
-           }
-    
-           .search-input {
-             font-size: 1em;
-             /* Decrease font size */
-           }
-    
-           .search-submit {
-             font-size: 1em;
-           }
-         }
-    
-         @media (max-width: 480px) {
-           .search-bar {
-             top: 5%;
-             left: 5%;
-             width: 90%;
-             /* Full width on small screens */
-           }
-    
-           .search-input {
-             font-size: 0.9em;
-             /* Smaller font for mobile */
-           }
-    
-           .search-submit {
-             font-size: 0.9em;
-             padding: 8px;
-             /* Adjust button size */
-           }
-         }
+      .search-bar{
+        position:absolute;
+        top:13%;
+        left:20%;
+        justify-content:center;
+        align-items:center;
+        scale:0.6;
+      }
     
       .club-card img{
         height:200px;
@@ -1264,6 +1035,4 @@ footer {
         position:absolute;
         top:85%;
       }
-
-      
     }

@@ -259,31 +259,29 @@ body{
 
 
 /*intro section*/
-.intro-section {
-  position: relative;
-  width: 100%;
-  min-height: fit-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+.intro-section{
+  position:relative;
+  width:100%;
+  min-height:fit-content;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
+
 .pattern-2{
   position:relative;
   width:100%;
   min-height:fit-content;
 }
 
-.intro-content {
-  position: absolute;
-  z-index: 1;
-  text-align: center;
-  color: white;
-  font-family: var(--font-helvetica);
-  font-size: 2.7em;
-  /* Default size for larger screens */
-  padding: 20px;
-}
+.intro-content{
+  position:absolute;
+  z-index:1;
+  text-align:center;
+  color:white;
+  font-family:var(--font-helvetica);
+  font-size:2.7em;
+  }
 
   .intro-content-stuff{
     font-style: italic;
@@ -317,13 +315,13 @@ body{
 
 @media(min-width:320px) and (max-width:480px){
   .intro-content{
-    transform: scale(0.2);
+    scale:0.2;
     margin:0;
     
   }
   .shape-2{
     right:0;
-    transform: scale(0.3);
+    scale:0.3;
   }
 }
 
@@ -363,139 +361,64 @@ body{
     left:200px;
 }
 
-/* clubs section */
-.clubs-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
-  height: auto;
-  padding: 20px;
-  background-color: #000;
-  /* Ensure background is visible */
-}
-
-.clubs-polaroid-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.clubs-polaroid {
-  width: 200px;
-  padding: 10px;
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transform: rotate(-10deg);
-  transition: transform 0.2s;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.clubs-polaroid img {
-  width: 100%;
-  height: auto;
-}
-
-.clubs-polaroid:nth-child(2) {
-  transform: rotate(10deg);
-}
-
 .clubs-polaroid:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-.clubs-content-container {
-  text-align: center;
-  margin-top: 20px;
+.clubs-content-container{
+  top:10%;
+  left:50%;
+  position:absolute;
+  float:right;
 }
 
-.clubs-container-title {
-  color: white;
-  font-family: var(--font-unbounded);
-  font-size: 2.5rem;
+.clubs-container-title{
+  color:white;
+  font-family:var(--font-unbounded);
+  font-size: 3rem;
+  
 }
 
-.clubs-container-text {
-  font-size: 1.2rem;
-  color: #bcbcbc;
-  font-family: var(--font-helvetica);
-  margin-top: 10px;
+.clubs-container-text{
+  width:100%;
+  font-size:1.5rem;
+  color:#bcbcbc;
+  font-family:var(--font-helvetica);
 }
 
-.enter-clubs-btn {
-  background-color: var(--primary-600);
-  font-family: var(--font-unbounded);
-  font-size: 1rem;
-  color: white;
-  cursor: pointer;
-  width: 11rem;
-  height: 3.5rem;
-  border: 1px solid white;
-  border-radius: 40px;
-  margin-top: 20px;
+.enter-clubs-btn{
+  background-color:var(--primary-600);
+  font-family:var(--font-unbounded);
+  font-size:1rem;
+  color:white;
+  cursor:pointer;
+  width:11rem;
+  height:3.5rem;
+  border:1px solid white;
+  border-radius:40px;
 }
 
-@media (max-width: 768px) {
-  .clubs-section {
-    flex-direction: column;
-    padding: 10px;
+@media(min-width:320px) and (max-width:480px){
+  .clubs-section{
+    width:100vw;
+    height: auto;
   }
+  
+  .clubs-polaroid-container{
+    scale:0.3;
+  }
+  
+  .clubs-content-container{
+    left:30%;
+    width:80%;
+    top:0;
+    bottom:70%;
+    scale:0.3;
+   }  
 
-  .clubs-polaroid-container {
-    gap: 10px;
-    flex-direction: column;
-  }
-
-  .clubs-polaroid {
-    width: 180px;
-  }
-
-  .clubs-container-title {
-    font-size: 2rem;
-  }
-
-  .clubs-container-text {
-    font-size: 1rem;
-  }
-
-  .enter-clubs-btn {
-    font-size: 0.9rem;
-    width: 9rem;
-    height: 3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .clubs-section {
-    padding: 10px;
-  }
-
-  .clubs-polaroid-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .clubs-polaroid {
-    width: 150px;
-  }
-
-  .clubs-container-title {
-    font-size: 1.8rem;
-  }
-
-  .clubs-container-text {
-    font-size: 0.9rem;
-  }
-
-  .enter-clubs-btn {
-    font-size: 0.8rem;
-    width: 8rem;
-    height: 2.5rem;
-  }
+   .clubs-container-text{
+    font-size:1.6rem;
+   }
 }
 
 /*   */
