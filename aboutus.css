@@ -48,7 +48,7 @@ body{
   padding-right:6px;
   font-family:'Unbounded', sans-serif;
   text-decoration:none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color:white;
 }
 
@@ -150,7 +150,7 @@ body{
 
 .intro-content h1{
   font-family: var(--font-unbounded);
-  font-size:3.5em;
+  font-size:9em;
 }
 .join-wrapper{
   display:flex;

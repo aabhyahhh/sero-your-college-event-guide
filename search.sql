@@ -9,7 +9,7 @@ CREATE TABLE clubs (
 INSERT INTO clubs (id, club_name, club_description, club_page_url, keywords) VALUES
 ('001', 'Coreographia', 'The official dance society', 'coreographia.html', 'dance, choreography, performance'),
 ('002', 'Aperture', 'The official photography club', 'aperture.html', 'photography, camera'),
-('003', 'Anova', 'The official DSC/IT technical society', 'anova.html', 'Technical, DSC/IT, Innovation, coding'),
+('003', 'Anova', 'The official DSE/IT technical society', 'anova.html', 'Technical, DSE/IT, Innovation, coding'),
 ('004', 'Litmus', 'The official literary Arts society', 'litmus.html', 'Writing, Debating, Reading , MUN Society'),
 ('005', 'Acm', 'The official computing society', 'acm.html', 'tech, enthusiasts , teamwork , computing, technical, skills'),
 ('006', 'Biotech Club', 'The official biotech society', 'biotech.html', 'Biosciences, Biotech, sciences , Biology'),

@@ -48,7 +48,7 @@ body{
   padding-right:6px;
   font-family:'Unbounded', sans-serif;
   text-decoration:none;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color:white;
 }
 
@@ -328,7 +328,8 @@ body{
   /*clubs- section*/
   .clubs-section{
     position: relative;
-    display:flex;
+    display:inline-block;
+    width:100%;
   }
 
   .clubs-polaroid-container{
