@@ -29,6 +29,9 @@
       href="https://fonts.googleapis.com/css2?family=Apple Garamond:ital,wght@0,400;1,700&display=swap"
       />
       <script src="https://kit.fontawesome.com/0d02b672df.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/FontLoader.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/TextGeometry.js"></script>
       <title>SERO</title>
   </head>
   <body>
@@ -36,7 +39,7 @@
      <nav class="navigation">
       <div class="left-container">
       <!--logo-->
-           <a href="index.html"><img src="logo_1.png" alt="logo" class="logo"></a>
+           <a href="index.html"><img src="img/logo_1.png" alt="logo" class="logo"></a>
       </div>
       <ul class="nav-list sidebar">
         <li class="close-button" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -59,16 +62,13 @@
     </nav>
     <!--end of nav bar-->
     
-    
-
     <!-- *** 3D HEADER *** -->
     <div class="header-3d">
-      
-      <!-- 3d element -->
-      <iframe class="interactive-element" src='https://my.spline.design/interfaceii-54c1c06365475971a96681d0904f7313/' frameborder='0' width='100%' height='100%'></iframe>
+      <!-- 3D element container -->
+      <div class="interactive-element" id="threejs-container"></div>
       
       <!--background pattern-->
-      <img src="background_pattern.svg" class="pattern-1" width="100%">
+      <img src="img/background_pattern.svg" class="pattern-1" width="100%">
     </div>
 
     <!-- ***welcome message*** -->
@@ -81,7 +81,7 @@
    
     <!--hero section-->
     <div class="hero-section">
-      <img src="hero-img.png" alt="hero-img" class="hero-img">
+      <img src="img/hero-img.png" alt="hero-img" class="hero-img">
 
       <!-- credits -->
       <div class="credits">
@@ -102,19 +102,19 @@
     <div class="intro-section">
       
       <!--background-glow pattern-->
-      <img src="background-glow_green.svg" class="pattern-2" width="100%">
+      <img src="img/background-glow_green.svg" class="pattern-2" width="100%">
 
       <!--intro content-->
       <div class="intro-content">
         We bring you all the fun and 
-        <img src="intro-shape1.svg" class="intro-shape1"> 
+        <img src="img/intro-shape1.svg" class="intro-shape1"> 
         engaging <br>
-        <img src="intro-shape2.svg" class="intro-shape2"> 
+        <img src="img/intro-shape2.svg" class="intro-shape2"> 
         <span class="intro-content-stuff">stuff</span>
          happening around your campus as <br>
         well as your 
         <span class="intro-content-city">city</span>
-        <img src="intro-shape3.svg" class="intro-shape3">
+        <img src="img/intro-shape3.svg" class="intro-shape3">
        </div>
     </div>
 
@@ -123,15 +123,15 @@
     <!-- Clubs intro section-->
     <div class="clubs-section">
       <!-- background image for clubs section-->
-      <img src="clubs-section-img.svg" alt="clubs-section" width="100%">
+      <img src="img/clubs-section-img.svg" alt="clubs-section" width="100%">
 
       <!-- polaroids -->
       <div class="clubs-polaroid-container">
         <div class="clubs-polaroid">
-            <img src="clubs-polaroid2.jpg" alt="Image 1">
+            <img src="img/clubs-polaroid2.jpg" alt="Image 1">
         </div>
         <div class="clubs-polaroid">
-            <img src="clubs-polaroid1.jpg" alt="Image 2">
+            <img src="img/clubs-polaroid1.jpg" alt="Image 2">
         </div>
       </div>
         
@@ -139,8 +139,8 @@
       <!--clubs-content-->
         <div class="clubs-content-container">
           <h1 class="clubs-container-title">Clubs 🏫</h1>
-          <p class="clubs-container-text">Stay updated with all your campus events.<br>
-            Get inside access to exclusive gatherings and after parties.
+          <p class="clubs-container-text">Stay updated with all your campus club events.<br>
+            Receive personalised notifications to your subscribed clubs!
           </p>
          <button  onclick="window.location.href='clubs-overview.html';"class="enter-clubs-btn">Enter Clubs <i class="fa-solid fa-arrow-right" style="color: #ffffff; margin-left:5px"></i></button>
         </div>
@@ -150,74 +150,73 @@
     <!-- Fyndit section-->
     <section class="fyndit-section">
       <!-- background image for fyndit section-->
-      <img src="fyndit-section-img.svg" alt="fyndit-section" width="100%">
-
-       <!--fyndit content-->
-       <div class="fyndit-content-container">
-        <h1 class="fyndit-container-title">FYNDit 🪩</h1>
-        <p class="fyndit-container-text">Stay updated with all your campus events.<br>
-          Get inside access to exclusive gatherings and after parties.
-        </p>
-        <button onclick="window.location.href='fyndit.html';" class="enter-fyndit-btn">Enter FYNDit <i class="fa-solid fa-arrow-right" style="color: #ffffff; margin-left:5px"></i></button>
-      </div>
+      <img src="img/fyndit-section-img.svg" alt="fyndit-section" width="100%">
 
       <!-- polaroids -->
       <div class="fyndit-polaroid-container">
         <div class="fyndit-polaroid">
-            <img src="fyndit-polaroid1.jpg" alt="Image 1">
+            <img src="img/fyndit-polaroid1.jpg" alt="Image 1">
         </div>
         <div class="fyndit-polaroid">
-            <img src="fyndit-polaroid2.jpg" alt="Image 2">
+            <img src="img/fyndit-polaroid2.jpg" alt="Image 2">
         </div>
-      </div>    
+      </div>
+
+       <!--fyndit content-->
+       <div class="fyndit-content-container">
+        <h1 class="fyndit-container-title">FYNDit 🪩</h1>
+        <p class="fyndit-container-text">Find social, sports and fests near you!<br>
+          Get inside access to exclusive gatherings and after parties.
+        </p>
+        <button onclick="window.location.href='fyndit.html';" class="enter-fyndit-btn">Enter FYNDit <i class="fa-solid fa-arrow-right" style="color: #ffffff; margin-left:5px"></i></button>
+      </div>
     </section>
-
-   <img src="background-pattern3.svg" alt="grid pattern" class="pattern-3">
-  
-  <!--footer-->
-  <div class="footer-upper">
-    <div class="footer-content">
-      <p>We're social, so if you'd like to talk about your event, get in touch!</p>
-    </div>
-      
-    <div class="footer-contact-table">
-    <table class="footer-contact" >
-        <tr>
-          <td>Email</td>
-          <td>seromuj@gmail.com<br>
-          <td colspan="2">drop us a comment: <input type="text" placeholder="write here." class="input-comment"></td>
-        </tr>
-      </table>
+ 
+    <!--footer-->
+<div class="footer-upper">
+  <div class="footer-content">
+    <p>We're social, so if you'd like to talk about your event, get in touch!</p>
   </div>
-  </div>
+    
+  <div class="footer-contact-table">
+  <table class="footer-contact" >
+      <tr>
+        <td>Email</td>
+        <td>seromuj@gmail.com<br>
+        <td colspan="2">drop us a comment: <input type="text" placeholder="write here." class="input-comment"></td>
+      </tr>
+    </table>
+</div>
+</div>
 <footer>
-    <div class="footer-links">
-      <div class="footer-logo">
-          <img src="logo_1.png" >
-      </div>
+  <div class="footer-links">
+    <div class="footer-logo">
+        <img src="img/logo_1.png" >
+    </div>
 
-      <div class="footer-table1">
-          <table class="footer-links-table">
-        <tr>
-          <td><a href="index.html" class="footer-link">Home</a></td>
-          <td><a href="clubs-overview.html" class="footer-link">Clubs</a></td>
-          <td><a href="fyndit.html" class="footer-link">FYNDit</a></td>
-          <td><a href="aboutus.html" class="footer-link">AboutUs</a></td>
-          <td><a href="contactus.html" class="footer-link">ContactUs</a></td>
-        </tr>
-      </table>
-      </div>
+    <div class="footer-table1">
+        <table class="footer-links-table">
+      <tr>
+        <td><a href="index.html" class="footer-link">Home</a></td>
+        <td><a href="clubs-overview.html" class="footer-link">Clubs</a></td>
+        <td><a href="fyndit.html" class="footer-link">FYNDit</a></td>
+        <td><a href="aboutus.html" class="footer-link">AboutUs</a></td>
+        <td><a href="contactus.html" class="footer-link">ContactUs</a></td>
+      </tr>
+    </table>
+    </div>
 
-      <div class="footer-table2">
-         <table class="social-icons">
-        <tr>
-          <td><a href="https://www.instagram.com/sero.muj/" class="social-icons-link"><i class="fa-brands fa-instagram" style="color: #f5f5f5; scale:1.2"></i></a></td>
-          <td><a href="https://x.com/_seroindia" class="social-icons-link"><i class="fa-brands fa-x-twitter" style="color: #ffffff; scale:1.2"></i></a></td>
-        </tr>      
-      </table>
-      </div>
-      </div>
+    <div class="footer-table2">
+       <table class="social-icons">
+      <tr>
+        <td><a href="https://www.instagram.com/sero.muj/" class="social-icons-link"><i class="fa-brands fa-instagram" style="color: #f5f5f5; scale:1.2"></i></a></td>
+        <td><a href="https://x.com/_seroindia" class="social-icons-link"><i class="fa-brands fa-x-twitter" style="color: #ffffff; scale:1.2"></i></a></td>
+      </tr>      
+    </table>
+    </div>
+    </div>
 </footer>
-  <script src="script.js"></script>
+
+<script src="script.js"></script>
   </body>
-  </html>
+</html>
