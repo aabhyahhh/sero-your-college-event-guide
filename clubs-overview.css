@@ -125,7 +125,7 @@ body{
 }
 
 .clubs-title{
-  top: 8%;
+  top: 5%;
   font-size:9em;
   position:absolute;
   margin: 0;
@@ -185,7 +185,7 @@ body{
   
   .clubs-title{
     font-size:3.5em;
-    top:0;
+    top:10%;
   }
   .clubs-text {
     font-size: 1.5em; /* Adjust font size for mobile */
@@ -257,7 +257,7 @@ body{
   position:absolute;
   color:white;
   margin-top:0;
-  left:27.54%;
+  left:24%;
   font-family: var(--font-unbounded);
   font-size:4em;
 }
@@ -265,9 +265,9 @@ body{
 .gradient-line{
   position:absolute;
   z-index:1;
-  margin-top:3%;
-  left:0;
-  width: 25%;
+  margin-top:5%;
+  right: 80%;
+  width: 20%;
   height: 5px; 
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
 }
@@ -275,9 +275,9 @@ body{
 .gradient-line-1{
   position:absolute;
   z-index:1;
-  margin-top:3%;
-  right:0;
-  width: 25%;
+  margin-top:5%;
+  left:85%;
+  width: 15%;
   height: 5px; 
   background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
 }
@@ -340,6 +340,11 @@ body{
 
 .carousel-club-name{
   font-family:'Josefin Sans' ;
+  font-weight: 600;
+}
+
+.carousel-club-date{
+  font-family: 'Josefin Sans';
 }
 
 .carousel-item-link{
@@ -453,9 +458,9 @@ body{
 }
 #cover {
   position: absolute;
-  top: 7%;
-  left:30%;
-  width: 1350px;
+  top: 10%;
+  left:33%;
+  width: 1000px;
   padding: 35px;
   margin: -83px auto 0 auto;
   background-color: #9d7fcd;
@@ -852,6 +857,10 @@ footer {
     justify-content:center;
     align-items:center;
     scale:0.3;
+  }
+
+  #cover{
+    left: 50%;
   }
 
   .club-card img{
