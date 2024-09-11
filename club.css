@@ -231,7 +231,7 @@ body{
     }
 
     .event-img{
-      transform:scale(0.9);
+      transform:scale(0.91);
       transform-origin:left;
       overflow:hidden;
   }  
