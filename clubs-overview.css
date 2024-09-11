@@ -119,6 +119,8 @@ body{
 /*hero section*/
 .hero-section{
   position:relative;
+  height:auto;
+  min-height:fit-content;
   display:flex;
   justify-content: center;
   align-items:center;
@@ -135,15 +137,13 @@ body{
 
 .clubs-text {
   position: absolute;
+  top: 20%;
   color: white;
-  /*top: 25%;*/
   font-size: 3em;
   font-family: "EB Garamond";
-  width: 60%;
   line-height: 1.2;
   text-align: center;
-  margin-top: 1em;
-  top: 17%;
+  margin:3% 10%;  
 }
 
 .clubs-text-frame {
@@ -154,11 +154,54 @@ body{
 
 .hero-img-bottom{
   position:absolute;
-  top:55%;
+  bottom:0;
   width:100%;
   height:auto;
 }
 
+@media(min-width:320px) and (max-width:480px){
+.hero-section{
+  width:100%;
+  height:70vh;
+}
+
+.clubs-title{
+  font-size:5em;
+  top:0;
+}
+.clubs-text{
+  display:inline-block;
+  line-height:1.4;
+  font-size: 1.5em;
+}
+
+.clubs-text-frame1, .clubs-text-frame2{
+  scale:0.8;
+}
+
+.clubs-text-frame{
+  display:inline-block;
+}
+
+.clubs-text-frame {
+  display: inline-block;
+   width: auto; 
+   height: auto; 
+   margin:0;
+   padding:0;
+}
+
+  img.clubs-text-frame1, img.clubs-text-frame2 {
+    width: 20px; 
+    height: 20px; 
+  }
+
+}
+
+/*end of hero section*/
+
+
+/*scrollbar animation*/
 .scrollbar-animation{
   position:relative;
   background-color: #E1A243;
@@ -182,37 +225,6 @@ body{
 }
 
 @media(min-width:320px) and (max-width:480px){
-  
-  .clubs-title{
-    font-size:3.5em;
-    top:10%;
-  }
-  .clubs-text {
-    font-size: 1.5em; /* Adjust font size for mobile */
-    width: 90%; /* Increase width to take more space */
-    top: 20%; /* Adjust top position for better alignment */
-    line-height: 1.2; /* Increase line-height for readability */
-  }
-
-  .clubs-text-frame {
-    display: inline-block;
-    width: auto; /* Adjust width for responsive scaling */
-    height: auto; /* Adjust height for responsive scaling */
-  }
-
-  img.clubs-text-frame1, img.clubs-text-frame2 {
-    width: 20px; /* Scale down the images */
-    height: 20px; /* Maintain aspect ratio by adjusting height */
-  }
-   .hero-section{
-    width:100%;
-    height:70vh;
-  }
-  
-  .hero-img-bottom{
-    top:75%;
-  }
-
   .scrollbar-animation{
     position:relative;
     height:30px;
@@ -230,10 +242,6 @@ body{
   
 }
 
-/***************** end of hero section *************************/
-
-
-
 
 /*************** Upcoming events container ********************************/
 .upc-events-container{
@@ -241,58 +249,66 @@ body{
   display:block;
   justify-content:center;
   align-items:center;
+  height:100vh;
+  min-height:fit-content;
+  padding:20px 0;
 }
 
 .upc-events-title{
   position:absolute;
   top:5%;
-  text-align: center;
   width:100%;
   height:auto;
-  z-index:10;
   display:flex;
+  justify-content:center;
+  align-items:center;
 }
 
 .title-text{
-  position:absolute;
+  margin:0;
   color:white;
-  margin-top:0;
-  left:24%;
   font-family: var(--font-unbounded);
   font-size:4em;
+  padding:0 20px;
 }
 
+.title-gradient{
+  display:flex;
+  align-items:center;
+}
 .gradient-line{
   position:absolute;
-  z-index:1;
-  margin-top:5%;
-  right: 80%;
   width: 20%;
   height: 5px; 
+  flex:1;
   background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
+  left:0;
 }
-
 .gradient-line-1{
   position:absolute;
-  z-index:1;
-  margin-top:5%;
-  left:85%;
-  width: 15%;
+  width: 20%;
   height: 5px; 
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
+  flex:1;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
+  right:0;
+  transform:rotate(180deg);
 }
+
 
 @media(min-width:320px) and (max-width:480px){
   .upc-events-container{
     width:100%;
-    height:125vh;
+  
   }
 
+
   .title-text{
-    width:60%;
-    font-size: 1.7em;
-    text-align: center;
-    left: 20%;
+    font-size:1.5em;
+  }
+
+
+  .gradient-line,.gradient-line-1{
+    width:15%;
   }
 }
 
@@ -302,7 +318,7 @@ body{
   position:absolute;
   width:100%;
   overflow:hidden;
-  top:20%;
+  top:15%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -398,10 +414,14 @@ body{
   }
   .carousel-container {
     width: 100%;
+    top:10%;
+    transform:scale(0.85);
+    min-height:fit-content;
   }
 
   .controls {
     justify-content: space-around;
+
   }
 
   button {
@@ -909,38 +929,7 @@ footer {
       text-align: center;
     }
 
-    /*hero section*/
-    .hero-section{
-      width:100%;
-      height:70vh;
-    }
-  
-    .clubs-title{
-      font-size:5em;
-      top:0;
-    }
-    .clubs-text{
-      display:inline-block;
-      width:90%;
-      top:15%;
-      line-height:32px;
-      font-size: 2.1em;
-    }
-
-    .clubs-text-frame1, .clubs-text-frame2{
-      scale:0.8;
-    }
-  
-    .clubs-text-frame{
-      display:inline-block;
-      margin:0;
-      padding:0;
-    }
-    .hero-img-bottom{
-      top:60%;
-      height:30%;
-    }
-
+    
     /*scrollbar*/
     .scrollbar-animation{
       position:relative;
