@@ -150,12 +150,14 @@ body{
     color: white;
     font-size:1.7em;
     font-family: var(--font-unbounded);
+    text-decoration: none;
   }
   
   .organiser-club{
     color: white;
     font-size:1.3em;
     font-family: 'Josefin Sans';
+
   }
   
   .register-btn{
@@ -219,6 +221,7 @@ body{
   }
   
   .tabcontent p {
+    color: white;
     margin: 5px;
   }
   
@@ -273,12 +276,19 @@ body{
   
   .team-member{
     display:block;
+    justify-content: center;
   }
   
   .team-member-name{
     font-family:'EB Garamond';
     color:white;
     font-size:1.3rem;
+  }
+
+  .team-member-subheading p{
+    font-family: 'EB Garamond';
+    font-size: 1rem;
+    color: white;
   }
   
   /*contact*/
@@ -641,6 +651,8 @@ body{
     .team-container{
       grid-template-columns: repeat(1, 1fr);
     }
+
+    
   
     .form-group label, .contact-info h2{
       font-size: 1.2em;
