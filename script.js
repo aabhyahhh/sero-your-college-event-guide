@@ -254,6 +254,4 @@ document.getElementById('prev-btn').addEventListener('click', () => {
   }
 });
 
-// Initial render
 renderEvents();
-
