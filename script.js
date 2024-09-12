@@ -255,6 +255,3 @@ document.getElementById('prev-btn').addEventListener('click', () => {
 });
 
 renderEvents();
-
-
-

@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <link rel="shortcut icon" href="logo.png" type="x-icon"> 
+    <link rel="shortcut icon" href="img/litmus.png" type="x-icon"> 
 
     <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./litmus.css" />
+    <link rel="stylesheet" href="litmus.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap"
@@ -32,14 +32,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Archivo+Black&family=Bebas+Neue&family=Black+Ops+One&family=Chakra+Petch:wght@500&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Josefin+Sans:wght@100&family=Madimi+One&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Poiret+One&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100&family=Rock+3D&family=Space+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0d02b672df.js" crossorigin="anonymous"></script>
-    <title>Litmus</title>
+    <title>Litmus - The Literature Club</title>
   </head>
   <body>
      <!-- navigation bar -->
      <nav class="navigation">
       <div class="left-container">
       <!--logo-->
-           <a href="index.html"><img src="logo_1.png" alt="logo" class="logo"></a>
+           <a href="index.html"><img src="img/logo_1.png" alt="logo" class="logo"></a>
       </div>
       <ul class="nav-list sidebar">
         <li class="close-button" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
@@ -63,17 +63,17 @@
     <!-- end of nav bar-->
 
     <div class="hero-section">
-      <img src="background_pattern.svg" class="pattern-1" style="width:100%" title="bg pattern">
+      <img src="img/background_pattern.svg" class="pattern-1" style="width:100%" title="bg pattern">
       <div class="event-container">
         <div class="left-container">
           <p class="event-name">Litmus</p>
-          <p class="venue"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Manipal University Jaipur</p>
-          <p class="club-caption">• Where literature meets creativity! • Join today • </p>
+          <!--<p class="venue"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Manipal University Jaipur</p>-->
+          <p class="club-caption">• The Literature Club • Join today • </p>
          <a href="subscribe.html"> <button class="register-btn">Subscribe</button></a>
         </div>
         
         <div class="right-container">
-          <img src="litmus.png" class="event-img" title="club logo">
+          <img src="img/litmus.png" class="event-img" title="club logo">
         </div>
       </div>
     </div>
@@ -81,23 +81,24 @@
     <!-- tab switching -->
      <div class="tabs">
         <button class="tablink active" onclick="openTab(event, 'upc-events')">Upcoming Events</button>
-        <!-- <button class="tablink" onclick="openTab(event, 'Gallery')">Gallery</button> -->
-        <button class="tablink" onclick="openTab(event, 'Team')">Team</button>
+        <!-- <button class="tablink" onclick="openTab(event, 'Gallery')">Gallery</button> 
+        <button class="tablink" onclick="openTab(event, 'Team')">Team</button>-->
         <button class="tablink" onclick="openTab(event, 'Contact')">Contact</button>
     </div>
 
     <div id="upc-events" class="tabcontent upc-events">
         <div class="grid-container">
             <div class="card">
-                <img src="MUJMUN POSTER.jpg" alt="Event Image">
+                <img src="img/mujmun.png" alt="Event Image">
                 <h3>MUJMUN</h3>
                 <p>Litmus</p>
                 <p>28TH and 29th Sep, 24 &middot; 11:30 AM</p>
                 <a href="https://forms.gle/78y1XPyzx29RYhL19" class="register-button">Register</a>
             </div>
         </div>
+        <!--<h1 class="no-events">No upcoming events...</h1>-->
     </div>
-<!-- 
+
     <div id="Gallery" class="tabcontent gallery" style="display:none">
        <div class="gallery-container">
         <img src="gallery-img.png" class="gallery-img">
@@ -107,16 +108,16 @@
         <img src="gallery-img.png" class="gallery-img">
         <img src="gallery-img.png" class="gallery-img">
        </div>
-    </div> -->
+    </div>
 
     <div id="Team" class="tabcontent team" style="display:none">
         <div class="team-container">
           <div class="team-member">
-            <img src="Core photo.jpeg" class="team-member-img">
+            <img src="img/Core photo.jpeg" class="team-member-img">
             <p class="team-member-name"> Core Photo</p>
           </div>
           <div class="team-member">
-            <img src="Prabhav mishra president.jpg" class="team-member-img">
+            <img src="img/Prabhav mishra president.jpg" class="team-member-img">
             <p class="team-member-name"> Prabhav mishra - President</p>
           </div>
           <div class="team-member">
@@ -151,34 +152,35 @@
     </div>
 
     <div id="Contact" class="tabcontent contact" style="display:none">
-      <form class="contact-form">
-        <div class="form-group">
-            <label for="first-name">First name</label>
-            <input type="text" id="first-name" name="first-name" placeholder="First name">
-        </div>
-        <div class="form-group">
-            <label for="last-name">Last name</label>
-            <input type="text" id="last-name" name="last-name" placeholder="Last name">
-        </div>
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="you@company.com">
-        </div>
-        <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Leave us a message..."></textarea>
-        </div>
-        <button type="submit">Send message</button>
-    </form>
-    <div class="contact-info">
-        <h2>Chat with us</h2>
-        <p>Our friendly team is here to help.</p>
-        <p><a href="mailto:hi@untitledui.com">hi@untitledui.com</a></p>
-        <h2>Phone</h2>
-        <p>Mon-Fri from 8am to 5pm.</p>
-        <p>+1 (555) 000-0000</p>
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <div class="form-group">
+              <input type="hidden" name="access_key" value="5e991fb5-5eef-4b77-9d55-b24c50696aa1">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="First name">
+          </div>
+          <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Last name">
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com">
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="litmus_message" placeholder="Leave us a message..."></textarea>
+          </div>
+          <button type="submit">Send message</button>
+      </form>
+      <div class="contact-info">
+          <h2>Chat with us</h2>
+          <p>Our friendly team is here to help.</p>
+          <p><a href="mailto:seromuj@gmail.com">litmus.manipaljaipur@gmail.com</a></p>
+          <!--<h2>Phone</h2>
+          <p>Mon-Fri from 8am to 5pm.</p>
+          <p>+1 (555) 000-0000</p>-->
+      </div>
     </div>
-  </div>
 
     
 <!--footer-->

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <link rel="shortcut icon" href="img/coreo.png" type="x-icon"> 
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="coreographia.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Ciento:wght@900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Helvetica:wght@300;400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Apple Garamond:ital,wght@0,400;1,700&display=swap"
+      />
+      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Archivo+Black&family=Bebas+Neue&family=Black+Ops+One&family=Chakra+Petch:wght@500&family=Dancing+Script:wght@400..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Economica:ital,wght@0,400;0,700;1,400;1,700&family=Fjalla+One&family=Josefin+Sans:wght@100&family=Madimi+One&family=Ojuju:wght@200..800&family=Oswald:wght@200..700&family=Poiret+One&family=Protest+Revolution&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100&family=Rock+3D&family=Space+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0d02b672df.js" crossorigin="anonymous"></script>
+    <title>Coreographia - MUJ's Dance Society</title>
+  </head>
+  <body>
+     <!-- navigation bar -->
+     <nav class="navigation">
+      <div class="left-container">
+      <!--logo-->
+           <a href="index.html"><img src="img/logo_1.png" alt="logo" class="logo"></a>
+      </div>
+      <ul class="nav-list sidebar">
+        <li class="close-button" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li class="nav-item"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
+        <li class="nav-item"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
+        <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+        <li class="nav-item"><a href="contactus.html" class="nav-link">Contact Us</a></li>
+       <!-- <li class="nav-item"><a href="" class="nav-link">Log in</a></li>-->
+        <li class="nav-item"><a href="" class="nav-link">Admin</a></li>
+   </ul>
+      <ul class="nav-list">
+             <li class="nav-item hideOnMobile"><a href="clubs-overview.html" class="nav-link">Clubs</a></li>
+             <li class="nav-item hideOnMobile"><a href="fyndit.html" class="nav-link">FYNDit</a></li>
+             <li class="nav-item hideOnMobile"><a href="aboutus.html" class="nav-link">AboutUs</a></li>
+             <li class="nav-item hideOnMobile"><a href="contactus.html" class="nav-link">ContactUs</a></li>
+             <!-- <li class="nav-item hideOnMobile"><a href="" class="nav-link">Log in</a></li>-->
+             <li class="nav-item hideOnMobile"><a href="login.html"><button class="sign-up">Admin</button></li></a>
+             <li class="menu-button" onclick="showSidebar()" ><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <!-- end of nav bar-->
+
+    <div class="hero-section">
+      <img src="img/background_pattern.svg" class="pattern-1" style="width:100%" title="bg pattern">
+      <div class="event-container">
+        <div class="left-container">
+          <p class="event-name">Coreographia</p>
+          <!--<p class="venue"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Manipal University Jaipur</p>-->
+          <p class="club-caption">• MUJ's Dance Society • Join today • </p>
+         <a href="subscribe.html"> <button class="register-btn">Subscribe</button></a>
+        </div>
+        
+        <div class="right-container">
+          <img src="img/coreo.png" class="event-img" title="club logo">
+        </div>
+      </div>
+    </div>
+
+    <!-- tab switching -->
+     <div class="tabs">
+        <button class="tablink active" onclick="openTab(event, 'upc-events')">Upcoming Events</button>
+        <!-- <button class="tablink" onclick="openTab(event, 'Gallery')">Gallery</button> 
+        <button class="tablink" onclick="openTab(event, 'Team')">Team</button>-->
+        <button class="tablink" onclick="openTab(event, 'Contact')">Contact</button>
+    </div>
+
+    <div id="upc-events" class="tabcontent upc-events">
+        <!--<div class="grid-container">
+            <div class="card">
+                <img src="MUJMUN POSTER.jpg" alt="Event Image">
+                <h3>MUJMUN</h3>
+                <p>Litmus</p>
+                <p>28TH and 29th Sep, 24 &middot; 11:30 AM</p>
+                <a href="https://forms.gle/78y1XPyzx29RYhL19" class="register-button">Register</a>
+            </div>
+        </div>-->
+        <h1 class="no-events">No upcoming events...</h1>
+    </div>
+
+    <div id="Gallery" class="tabcontent gallery" style="display:none">
+       <div class="gallery-container">
+        <img src="gallery-img.png" class="gallery-img">
+        <img src="gallery-img.png" class="gallery-img">
+        <img src="gallery-img.png" class="gallery-img">
+        <img src="gallery-img.png" class="gallery-img">
+        <img src="gallery-img.png" class="gallery-img">
+        <img src="gallery-img.png" class="gallery-img">
+       </div>
+    </div>
+
+    <div id="Team" class="tabcontent team" style="display:none">
+        <div class="team-container">
+          <div class="team-member">
+            <img src="img/Core photo.jpeg" class="team-member-img">
+            <p class="team-member-name"> Core Photo</p>
+          </div>
+          <div class="team-member">
+            <img src="img/Prabhav mishra president.jpg" class="team-member-img">
+            <p class="team-member-name"> Prabhav mishra - President</p>
+          </div>
+          <div class="team-member">
+            <img src="Ansh vice president .jpg" class="team-member-img">
+            <p class="team-member-name">Ansh Bharadwaj - Vice President</p>
+          </div>
+          <div class="team-member">
+            <img src="Sameeksha Dixit cultural head .jpg" class="team-member-img">
+            <p class="team-member-name">Sameeksha Dixit - Cultural Head</p>
+          </div>
+          <div class="team-member">
+            <img src="Utkarsh editorial head.jpg" class="team-member-img">
+            <p class="team-member-name">Utkarsh Singh - Editorial Head</p>
+          </div>
+          <div class="team-member">
+            <img src="Suhani Valecha head of communications .JPG" class="team-member-img">
+            <p class="team-member-name">Suhani Valecha - Head of Communications</p>
+          </div>
+          <div class="team-member">
+            <img src="Ayushi gen sec .png" class="team-member-img">
+            <p class="team-member-name">Ayushi Jain - General Secretary</p>
+          </div>
+          <div class="team-member">
+            <img src="Divanshi marketing head .png" class="team-member-img">
+            <p class="team-member-name">Divanshi Gupta - Marketing Head</p>
+          </div>
+          <div class="team-member">
+            <img src="Pranshu head of media.png" class="team-member-img">
+            <p class="team-member-name">Pranshu Trivedi - Head of Media</p>
+          </div>
+        </div>
+    </div>
+
+    <div id="Contact" class="tabcontent contact" style="display:none">
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <div class="form-group">
+              <input type="hidden" name="access_key" value="5e991fb5-5eef-4b77-9d55-b24c50696aa1">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" placeholder="First name">
+          </div>
+          <div class="form-group">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" placeholder="Last name">
+          </div>
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com">
+          </div>
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="coreo_message" placeholder="Leave us a message..."></textarea>
+          </div>
+          <button type="submit">Send message</button>
+      </form>
+      <div class="contact-info">
+          <h2>Chat with us</h2>
+          <p>Our friendly team is here to help.</p>
+          <p><a href="mailto:seromuj@gmail.com">Coreografia@muj.manipal.edu</a></p>
+          <!--<h2>Phone</h2>
+          <p>Mon-Fri from 8am to 5pm.</p>
+          <p>+1 (555) 000-0000</p>-->
+      </div>
+    </div>
+
+    
+<!--footer-->
+<div class="footer-upper">
+  <div class="footer-content">
+    <p>We're social, so if you'd like to talk about your event, get in touch!</p>
+  </div>
+    
+  <div class="footer-contact-table">
+  <table class="footer-contact" >
+      <tr>
+        <td>Email</td>
+        <td>seromuj@gmail.com<br>
+        <td colspan="2">drop us a comment: <input type="text" placeholder="write here." class="input-comment"></td>
+      </tr>
+    </table>
+</div>
+</div>
+<footer>
+  <div class="footer-links">
+    <div class="footer-logo">
+        <img src="logo_1.png" title="logo">
+    </div>
+
+    <div class="footer-table1">
+        <table class="footer-links-table">
+      <tr>
+        <td><a href="index.html" class="footer-link">Home</a></td>
+        <td><a href="clubs-overview.html" class="footer-link">Clubs</a></td>
+        <td><a href="fyndit.html" class="footer-link">FYNDit</a></td>
+        <td><a href="aboutus.html" class="footer-link">AboutUs</a></td>
+        <td><a href="contactus.html" class="footer-link">ContactUs</a></td>
+      </tr>
+    </table>
+    </div>
+
+    <div class="footer-table2">
+       <table class="social-icons">
+      <tr>
+        <td><a href="https://www.instagram.com/sero.muj/" class="social-icons-link"><i class="fa-brands fa-instagram" style="color: #f5f5f5; scale:1.2"></i></a></td>
+        <td><a href="https://x.com/_seroindia" class="social-icons-link"><i class="fa-brands fa-x-twitter" style="color: #ffffff; scale:1.2"></i></a></td>
+      </tr>      
+    </table>
+    </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
