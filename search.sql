@@ -18,5 +18,5 @@ INSERT INTO clubs (id, club_name, club_description, club_page_url, keywords) VAL
 ('009', 'HumanofMUJ', 'The official Photoblog society', 'homuj.html', 'photoblog , Journaling, experiences , empowering '),
 ('010', 'GLITCH', 'The official eSports society', 'glitch.html', 'eSports, anime, VFX , gaming'),
 ('011', 'IEEE', 'The official Technical Society', 'ieee.html', 'Technical, Society, technology  , engineers '),
-('012', 'TMC', 'The official Music Society', 'tmc.html', 'Music , Society , diverse  , musical '),
-('013', 'Rotaract', 'The official environment society', 'rotaract.html', ' environment , socialservice, Green , service ');
+('012', 'TMC', 'The official Music Society', 'tmc.html', 'Music , Society , diverse  , musical ')
+;
