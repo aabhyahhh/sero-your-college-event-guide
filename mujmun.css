@@ -133,6 +133,7 @@ body{
    top:25%;
    margin:0 10%;
    display:flex;
+   flex-wrap:wrap;
  }
  
  .left-container{
@@ -181,18 +182,16 @@ body{
     overflow:hidden;
     width:50%;
     display:flex;
-
+    justify-content:start;
+    align-items:center;
  }
  
  .event-img{
-   overflow:hidden;
-   object-fit: cover;
-   transform:scale(0.55);
-   margin-top:-250px;
-   margin-left:-150px;
+  width:200%;
+  height:auto;
+  transform:scale(0.5);
+  transform-origin:top left;
  }
- 
- 
  @media(min-width:320px)and (max-width:480px){
      .hero-section{
        height:auto;
@@ -254,9 +253,7 @@ body{
  
      .event-img{
        transform:scale(0.8);
-       transform-origin:left;
        overflow:hidden;
-       margin:0;
    }  
  }
  /* end of hero section*/
@@ -315,7 +312,6 @@ body{
  .overview{
     margin: 5% 10%;
     background: radial-gradient(circle, rgba(0,0,0,1) 30%, rgba(76, 0, 130, 0.068) 60%, rgba(75,0,130,0.2) 80%, rgba(107, 98, 191, 0.375) 100%);
-    min-height:500px;
  }
 
  .overview-content{
@@ -363,12 +359,22 @@ body{
    display:block;
  }
  
+ .team-member-img{
+  width:350px;
+  height:auto;
+ }
  .team-member-name{
    font-family:'EB Garamond';
    color:white;
    font-size:1.3rem;
  }
  
+
+ .club-post{
+  font-family:'EB Garamond';
+   color:var(--color-goldenrod);
+   font-size:1.1rem;
+ }
  /*contact*/
  .contact{
    margin:5% 5%;
@@ -452,12 +458,13 @@ body{
      font-size: 1.4em;
  }
  
- .contact-info p, .contact-info a {
-     margin: 5px 0;
-     color: #a2a2a2;
-     font-size: 1em;
-     font-family:'Helvetica'
- 
+
+ .contact-info p, .contact-info a{
+  font-family:var(--font-unbounded);
+  font-size:0.8em;
+  color: #a2a2a2;
+  font-size: 1em;
+  margin: 5px 0;
  }
  
  @media screen and (max-width: 768px) {
@@ -550,8 +557,8 @@ body{
        scale:0.8;
      }
  
-     .team-member-name{
-       text-align:evc
+     .team-member-name,.club-post{
+       text-align:center;
      }
    
      .form-group label, .contact-info h2{
@@ -568,6 +575,11 @@ body{
        left:2%;
        width:100%;
        line-height:1em;
+     }
+
+     .contact-info p {
+      font-family:var(--font-unbounded);
+      font-size:0.8em;
      }
  }
  
