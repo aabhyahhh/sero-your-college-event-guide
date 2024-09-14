@@ -82,6 +82,18 @@ body {
     width: 100%;
 }
 
+@media(min-width:320px) and (max-width:480px){
+    .nav-list{
+      margin-top:10px;
+      margin-right:15px;
+    }
+    .logo{
+      width:90px;
+      height:45px;
+    }
+    }
+    
+
 @media(max-width:480px) {
     .hideOnMobile {
         display: none;

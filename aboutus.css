@@ -150,10 +150,11 @@ body{
 
 .intro-content h1{
   font-family: var(--font-unbounded);
-  font-size:9em;
+  font-size:8em;
+  margin-bottom:10px;
 }
 .join-wrapper{
-  display:flex;
+  font-size:2em;
   width:100%;
 }
 
@@ -250,10 +251,14 @@ font-size:2.3em;
   .intro-section{
     padding:0;
   }
-  .join-wrapper{
-   margin-top:-30px;
-  }   
+
+  .intro-content h1{
+    font-size:3em;
+  }
   
+  .join-wrapper p{
+    font-size:1em;
+  }
   .mobile-about{
     position:relative;
     display:block;
