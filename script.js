@@ -62,7 +62,29 @@ function searchClubs() {
           }
       }
   });
- }
+  if (input === '') {
+    resetClubsDisplay();
+  }
+}
+
+function resetClubsDisplay() {
+let visibleClubs = document.querySelectorAll('.club-card:not(.hidden-club)');
+let hiddenClubs = document.querySelectorAll('.club-card.hidden-club');
+
+// Show only the initially visible clubs
+visibleClubs.forEach(club => {
+  club.parentElement.style.display = "block";
+});
+
+// Keep hidden clubs hidden
+hiddenClubs.forEach(club => {
+  club.parentElement.style.display = "none";
+});
+} 
+
+
+
+
 
 
 // responsive tabs
